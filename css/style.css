@@ -450,19 +450,17 @@ nav ul li a:hover{
     /* margin: 20px; */
 }
 
-.products-btn{
+.index-products-btn{
     /* border: 1px solid red; */
     display: flex;
     padding: 10px 0 40px 0;
-    /* justify-content: center; */
+    margin: auto;
 }
 
-.products .btn{
+.index-products-btn .btn{
     margin: auto;
-    /* border: 1px solid red; */
-    /* background-color: #00000000; */
-    /* justify-content: center; */
 }
+
 
 
 
@@ -854,6 +852,106 @@ footer a{
     color: #FFF;
 }
 
+
+
+
+
+/* ====================所有商品==================== */
+.products{
+    margin: 30px auto 0 auto;
+    /* border: 1px solid red; */
+}
+
+.select-bar{
+    /* border: 1px solid green; */
+    display: flex;
+    padding: 0px;
+    /* justify-content: space-evenly; */
+}
+
+.products .col-12{
+    padding: 0px;
+}
+
+.select-bar-l{
+    border-top-left-radius: 35px;
+    border: 2px solid #1F237D;
+    border-right: 1px solid #1F237D;
+    border-bottom: transparent;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    background-color: #1F237D;
+    /* border: 1px solid red; */
+}
+
+.select-bar-r{
+    border-top-right-radius: 35px;
+    border: 2px solid #1F237D;
+    border-left: 2px solid #1F237D;
+    border-bottom: transparent;
+    width: 50%;
+    height: 40px;
+    align-content: center;
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.select-bar-l p{
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    color: #fff;
+    /* border: 1px solid red; */
+}
+
+.select-bar-r p{
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    color: #1F237D;
+    /* border: 1px solid red; */
+}
+
+.products .d-flex{
+    margin: 0;
+    padding: 20px;
+    flex-wrap: wrap;
+    border: 2px solid #1F237D;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    margin: 10px 15px 10px 15px;
+
+}
+
+.card-pic{
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.card-pic img{
+    width: 100%;
+}
+
+.card-name{
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    font-family: 'Noto Sans TC';
+    /* border: 1px solid red; */
+}
+
+.card-price{
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    font-family: 'Noto Sans TC';
+}
 
 
 
