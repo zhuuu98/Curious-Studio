@@ -6,7 +6,7 @@ body{
 .container{
     width: 100%;
     background-color: #fffaf2;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 main{
@@ -176,6 +176,7 @@ header{
     justify-content: space-between;
     position: sticky;
     top: 0;
+    z-index: 5;
 }
 
 .title{
@@ -813,20 +814,47 @@ footer a{
     /* border: 1px solid green; */
 }
 
+.cart-pay .cart-section .d-flex{
+    margin: 0px 0px 3px 0px;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
 .cart-pay .cart-section .d-flex:nth-child(2){
     padding-bottom: 20px;
 }
 
-.cart-pay .cart-section .d-flex:last-child{
+.total{
     border-bottom: 1px solid #1F237D;
     padding-bottom: 3px;
+    /* background-color: red; */
 }
 
-.cart-pay .cart-section .d-flex{
-    margin: 0;
-    justify-content: space-between;
-
+.pay-btn{
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    margin: 20px 0 30px auto;
+    border: 1px solid #1F237D;
+    border-radius: 15px;
+    color: #1F237D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.pay-btn:hover{
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    margin: 20px 0 30px auto;
+    border: 1px solid #1F237D;
+    background-color: #1F237D;
+    border-radius: 15px;
+    color: #FFF;
+}
+
+
 
 
 
