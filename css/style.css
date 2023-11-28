@@ -977,6 +977,45 @@ footer a{
     color: #6c6c6c;
 }
 
+.page{
+    display: flex;
+    margin: 50px auto;
+    /* text-align: center; */
+    justify-content: center;
+    align-content: center;
+    /* border: 1px solid red; */
+}
+
+.page i{
+    padding: 8px;
+    margin: auto;
+    color: #1F237D;
+    border-radius: 50%;
+    /* border: 1px solid palegreen; */
+}
+
+.page ul{
+    display: flex;
+    padding: 0px;
+    text-align: center;
+    margin: auto;
+    justify-content: space-evenly;
+    margin: 0 8px;
+    /* border: 1px solid green; */
+}
+
+.page ul li{
+    padding: 8px;
+    color: #1F237D;
+    /* border: 1px solid plum; */
+}
+
+.page ul li:first-child{
+    padding: 8px;
+    border-bottom: 1px solid #1F237D;
+    /* border: 1px solid plum; */
+}
+
 
 
 
