@@ -1040,6 +1040,8 @@ footer a{
 
 
 
+
+
 /* ======================關於我====================== */
 
 .d-flex{
@@ -1154,6 +1156,32 @@ footer a{
 .map{
     margin: auto;
     /* border: 3px solid red; */
+}
+
+
+
+
+
+
+
+
+/* ====================最新消息====================== */
+
+.news{
+    margin: auto;
+}
+
+.news a p{
+    font-size: 14px;
+    color: #6c6c6c;
+    border-bottom: 1px solid #6C6C6C;
+    width: 100%;
+    margin: 25px;
+}
+
+.news a p:hover{
+    color: #1F237D;
+    border-bottom: 2px solid #1F237D;
 }
 
 
