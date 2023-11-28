@@ -22,7 +22,6 @@ ul{
 .d-flex{
     display: flex;
     /* border: 1px solid green; */
-    margin: 100px auto;
 }
 
 .pic{
@@ -249,6 +248,7 @@ nav ul li a:hover{
     width: 130px;
     border-radius: 50px;
     border: 2px solid #bebebe;
+    padding-left: 10px;
     /* border: 1px solid red; */
 }
 
@@ -294,6 +294,7 @@ nav ul li a:hover{
     background-repeat-Y: no-repeat;
     
 }
+
 
 .index-title{
     display: flex;
@@ -345,6 +346,12 @@ nav ul li a:hover{
 .intro .d-flex{
     margin: 0px -10px 15px -10px;
     /* border: 1px solid pink; */
+}
+
+
+.intro-d-flex{
+    display: flex;
+    margin: 100px auto;
 }
 
 
@@ -994,6 +1001,11 @@ footer a{
     /* border: 1px solid palegreen; */
 }
 
+.arrow:hover{
+    font-size: 18px;
+    /* background-color: #5b5b5b; */
+}
+
 .page ul{
     display: flex;
     padding: 0px;
@@ -1004,17 +1016,148 @@ footer a{
     /* border: 1px solid green; */
 }
 
-.page ul li{
+.page ul a li{
     padding: 8px;
     color: #1F237D;
     /* border: 1px solid plum; */
 }
 
-.page ul li:first-child{
-    padding: 8px;
-    border-bottom: 1px solid #1F237D;
-    /* border: 1px solid plum; */
+.page ul a{
+    display: block;
+    text-decoration: none;
+    /* background-color: #5b5b5b; */
 }
+
+.page ul a:hover{
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid #1F237D;
+}
+
+
+
+
+
+
+
+/* ======================關於我====================== */
+
+.d-flex{
+    margin: 30px auto 0px auto;
+    /* border: 1px solid red; */
+}
+
+.about-section{
+    margin: auto;
+    /* border: 1px solid orange; */
+}
+
+.about-section .highlight{
+    /* border: 1px solid red; */
+}
+
+.about-text{
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.about-logo{
+    /* border: 1px solid blue; */
+}
+
+.about-logo img{
+    width: 75%;
+}
+
+.about-section h2{
+    margin-top: 30px;
+    font-size: 20px;
+    /* border: 1px solid red; */
+}
+
+.timeline-section{
+    margin: auto;
+    padding: 0px;
+    /* border: 1px solid red; */
+    height: 200px;
+}
+
+.timeline li{
+    width: 50%;
+    position: relative;
+    /* border: 1px solid green; */
+}
+
+.timeline li:nth-child(odd)::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #aaa;
+}
+
+.timeline li p{
+    width: 90%;
+    font-size: 14px;
+    margin: 20px;
+    /* text-align: center; */
+    /* border: 1px solid red; */
+}
+
+.timeline li:nth-child(odd){
+    float: left;
+    text-align: right;
+}
+.timeline li:nth-child(even){
+    float: right;
+    text-align: left;
+    /* padding-right: 100px; */
+    transform: translateY(50%);
+}
+
+.timeline li:last-child::after{
+    height: 50%;
+}
+
+.timeline li:before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #aaa;
+    z-index: 4;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.timeline li:nth-child(odd)::before{
+    right: -5px;
+}
+.timeline li:nth-child(even)::before{
+    left: -5px; 
+} 
+
+.contact p{
+    font-size: 14px;
+    line-height: 18px;
+    margin: 4px -10px;
+    /* border: 1px solid red; */
+}
+
+.map{
+    margin: auto;
+    /* border: 3px solid red; */
+}
+
+
+
 
 
 
