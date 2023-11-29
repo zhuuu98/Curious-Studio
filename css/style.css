@@ -239,32 +239,11 @@ nav ul li{
     display: inline-block;
 }
 
-/* .index-title nav ul li ul.dropdown li{
-    display: block;
-    padding: 8px;
-    text-align: center;
-} */
-
 nav ul li ul.dropdown li{
     display: block;
     padding: 8px;
     text-align: center;
 }
-
-/* .index-title nav ul li ul.dropdown{
-    width: 100%;
-    text-align: center;
-    font-size: 16px;
-    line-height: 16px;
-    padding: 0px;
-    margin: 0px;
-    position: absolute;
-    z-index: 5;
-    display: none;
-    background-color: rgb(61, 61, 61, 0.7);
-    border-radius: 15px;
-    border: 1px solid red;
-} */
 
 nav ul li ul.dropdown{
     width: 100%;
@@ -282,17 +261,9 @@ nav ul li ul.dropdown{
     /* border: 1px solid red; */
 }
 
-/* .index-title nav ul li a{
-    display: block;
-} */
-
 nav ul li a{
     display: block;
 }
-
-/* .index-title nav ul li:hover ul.dropdown{
-    display: block;
-} */
 
 nav ul li:hover ul.dropdown{
     display: block;
@@ -1284,6 +1255,57 @@ footer a{
 }
 
 
+
+
+
+
+
+
+
+/* =================工具======================= */
+.tools{
+    margin: 30px auto 0 auto;
+    /* border: 1px solid red; */
+}
+
+.tools .col-12{
+    padding: 0px;
+}
+
+/* ============= select bar ============== */
+.tools .left{
+    border-top-left-radius: 35px;
+    border-right: 1px solid #1F237D;
+    background-color: transparent;
+}
+
+.tools .right{
+    border-top-right-radius: 35px;
+    border-left: 2px solid #1F237D;
+    background-color: #1F237D;
+}
+
+.tools .right a p{
+    color: #fff;
+    /* border: 1px solid red; */
+}
+
+.tools .left a p{
+    color: #1F237D;
+    /* border: 1px solid red; */
+}
+
+/* ============= select bar ============== */
+
+
+.tools .d-flex{
+    margin: 0;
+    padding: 20px;
+    flex-wrap: wrap;
+    border: 2px solid #1F237D;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
