@@ -423,8 +423,6 @@ nav ul li:hover ul.dropdown{
 
 /* ================= course ================= */
 .course{
-    /* background-color: #DDDAEB; */
-    /* background-color: #EEDDC2; */
     background-color: #F5E5CC;
     height: 400px;
     display: flex;
