@@ -1,11 +1,14 @@
 /* ================純組件====================== */
 body{
     background-color: #fffaf2;
+    width: 100%;
+    /* border: 1px solid green; */
 }
 
 .container{
     width: 100%;
     background-color: #fffaf2;
+    margin: auto;
     /* border: 1px solid red; */
 }
 
@@ -289,6 +292,7 @@ nav ul li:hover ul.dropdown{
     border-radius: 50px;
     border: 2px solid #bebebe;
     padding-left: 10px;
+    outline: none;
     /* border: 1px solid red; */
 }
 
@@ -689,9 +693,9 @@ footer a{
 }
 
 .section-reservation{
+    /* margin: 0; */
+    margin-left: 20px;
     /* border: 1px solid red; */
-    margin: 0;
-    padding: 0;
 }
 
 .reservation-pic{
@@ -1198,7 +1202,7 @@ footer a{
 }
 
 .map{
-    margin: auto;
+    margin: 0 auto 20px auto;
     /* border: 3px solid red; */
 }
 
@@ -1237,11 +1241,12 @@ footer a{
 
 .product{
     margin: 20px auto 0 auto;
+    /* border: 1px solid red; */
 }
 
 .section-product{
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    margin-left: 20px;
     height: 300px;
     /* border: 1px solid red; */
 }
