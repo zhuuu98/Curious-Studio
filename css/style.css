@@ -256,6 +256,7 @@ nav ul li a{
 
 nav ul li a:hover{
     color: white;
+    transition: .3s;
 }
 
 
@@ -450,15 +451,13 @@ footer a{
 
 
 /* -----數量----- */
-.aa{
-    /* border: 1px solid green; */
-}
+
 .counter{
     padding: 0;
     margin: auto 0;
     /* background-color: #5b5b5b; */
-    border: 1px solid red;
-    width: 100px;
+    /* border: 1px solid red; */
+    /* width: 100px; */
     /* background-color: orange; */
 }
 
@@ -470,8 +469,8 @@ footer a{
     text-align:center;
     line-height:30px;
     background-color:transparent;
-    border: 1px solid green;
-    border-radius: 80px;
+    /* border: 1px solid green; */
+    /* border-radius: 80px; */
     /* background-color: orange; */
 
 }
@@ -493,7 +492,9 @@ footer a{
 #countnum{
     border-left:1px solid black;
     border-right:1px solid black;
-    color:#666
+    color:black;
+    font-size: 16px;
+    font-family: 'Noto Sans TC';
 }
 
 .counter #minus input, #plus input{  
@@ -542,7 +543,9 @@ footer a{
 #countnum2{
     border-left:1px solid black;
     border-right:1px solid black;
-    color:#666
+    color:black;
+    font-size: 16px;
+    font-family: 'Noto Sans TC';
 }
 
 .counter2 #minus2 input, #plus2 input{  
@@ -684,19 +687,19 @@ footer a{
 }
 
 .course h2{
-    /* border: 1px solid orange; */
     padding: 0;
+    /* border: 1px solid orange; */
 
 }
 
 .course p{
-    /* border: 1px solid blue; */
     width: 100%;
+    /* border: 1px solid blue; */
 }
 
 .course .course-btn{
-    /* border: 1px solid red; */
     margin: auto;
+    /* border: 1px solid red; */
 }
 
 
@@ -720,16 +723,30 @@ footer a{
     /* border: 1px solid blue; */
 }
 
-.products-each img{
-    width: 100%;
+.product-pic{
     border-radius: 50%;
+    overflow: hidden;
 }
 
+.product-pic img{
+    width: 100%;
+}
+
+.products-each img{
+    transition: 1s linear;
+    transform: scale(1);
+}
+    
+.products-each:hover img{
+    transform: scale(1.2);
+}
+
+
 .index-products-btn{
-    /* border: 1px solid red; */
     display: flex;
     padding: 10px 0 40px 0;
     margin: auto;
+    /* border: 1px solid red; */
 }
 
 .index-products-btn .btn{
@@ -745,7 +762,32 @@ footer a{
     font-family: Noto Sans TC;
 }
 
+.top{
+    border: 2px solid #fff;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1F237D;
+    position: fixed;
+    z-index: 999;
+    bottom: 30px;
+    right: 30px;
+}
 
+.top p{
+    font-family: 'Julius Sans One';
+    color: #fff;
+    width: 54px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 18px;
+    margin: auto;
+    padding-top: 2px;
+    /* background-color: red; */
+}
 
 
 
@@ -817,8 +859,8 @@ footer a{
 }
 
 .section-signin .signin-btn{
-    /* border: 1px solid red; */
     font-size: 16px;
+    /* border: 1px solid red; */
 }
 
 .section-signin .btn{
@@ -854,6 +896,9 @@ footer a{
 .section-reservation{
     /* margin: 0; */
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     /* border: 1px solid red; */
 }
 
@@ -903,8 +948,7 @@ footer a{
 }
 
 .section-reservation .btn{
-    margin: 30px auto;
-    justify-content: center;
+    margin-top: 15px;
 }
 
 .text{
@@ -921,7 +965,9 @@ footer a{
     /* border: 2px solid yellow; */
 }
 
-
+.reservation-counter{
+    margin: 10px 0px;
+}
 
 
 
@@ -1245,9 +1291,10 @@ footer a{
 
 
 
-/* ================關於我================ */
+/* ================關於我============== */
 
 .about-d-flex{
+    display: flex;
     margin: 30px auto 0px auto;
     /* border: 1px solid red; */
 }
@@ -1368,7 +1415,7 @@ footer a{
 
 
 
-/* ====================最新消息====================== */
+/* ================最新消息================ */
 
 .news{
     margin: auto;
@@ -1391,15 +1438,15 @@ footer a{
 
 
 
-/* ==================商品======================*/
+/* ===============商品================*/
 
 
-.product{
+.product1{
     margin: 20px auto 0 auto;
     /* border: 1px solid red; */
 }
 
-.section-product{
+.section-product1{
     /* margin: 0; */
     margin-left: 20px;
     height: 300px;
@@ -1409,17 +1456,20 @@ footer a{
     
 }
 
-.section-product .price{
+.section-product1 .price{
     /* text-align: left; */
     margin-top: 8px;
     /* border: 1px solid red; */
 }
 
-.section-product .btn{
-}
-
-.section-product .counter{
+.section-product1 .chose-text{
     margin-top: 30px;
+    /* border: 1px solid red; */
+}
+
+.section-product1 .counter{
+    margin-top: 10px;
+    /* border: 1px solid red; */
 }
 
 
@@ -1429,8 +1479,7 @@ footer a{
 
 
 
-
-/* =================工具======================= */
+/* =================工具================ */
 .tools{
     margin: 30px auto 0 auto;
     /* border: 1px solid red; */
@@ -1440,7 +1489,7 @@ footer a{
     padding: 0px;
 }
 
-/* ============= select bar ============== */
+/* ---------- select bar ----------- */
 .tools .left{
     border-top-left-radius: 35px;
     border-right: 1px solid #1F237D;
@@ -1463,7 +1512,7 @@ footer a{
     /* border: 1px solid red; */
 }
 
-/* ============= select bar ============== */
+/* --------- select bar --------- */
 
 
 .tools .d-flex{
