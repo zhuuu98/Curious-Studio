@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/aa.css">
+    <style>
+        ul,li{margin:0; padding:0; }
+    .counter li{float:left; list-style-type:none; width:30px; height:30px; text-align:center; line-height:30px; border:#999 thin solid; background-color:#fff}
+    .counter li input{font-size:20px; width:100%; height:100%; outline:none; -webkit-appearance:none; background:none; margin:0; padding:0; border: 1px solid transparent; border-radius: 0;}
+    #countnum{ border-left:hidden; border-right:hidden; color:#666}
+    </style>
 </head>
 <body>
     <a href="javascript: void(0)" class="btn">
         Button
         <span></span><span></span><span></span><span></span>
     </a>
+
+
+    <ul class="counter">
+        <li id="minus"><input type="button" onclick="minuser()" value="-"/></li>
+        <li id="countnum">0</li>
+        <li id="plus"><input type="button" onclick="adder()" value="+"/></li>
+    </ul>
+
+    <script src="./js/javascript.js"></script>
 
 
     

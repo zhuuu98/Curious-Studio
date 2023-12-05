@@ -71,10 +71,19 @@
                 <div class="d-flex col-10">
                     <h4>銀黏土寶石戒指課程</h4>
                     <div class="price">$1,800</div>
-                    <div class="cart-amount">
+                    <!-- <div class="cart-amount">
                         <span>數量：</span>
                         <input type="number" min="0" placeholder="1">
-                    </div>
+                    </div> -->
+                    <ul class="counter">
+                        <li id="minus">
+                        <input type="button" onclick="minuser()" value="-"/>
+                        </li>
+                        <li id="countnum">0</li>
+                        <li id="plus">
+                        <input type="button" onclick="adder()" value="+"/>
+                        </li>
+                    </ul>
                     <div class="cart-cancel">
                         <i class="fa-solid fa-xmark"></i>
                     </div>
@@ -88,10 +97,21 @@
                 <div class="d-flex col-10">
                     <h4>銀黏土寶石戒指課程</h4>
                     <div class="price">$1,800</div>
-                    <div class="cart-amount">
+
+                    <ul class="counter">
+                        <li id="minus">
+                        <input type="button" onclick="minuser()" value="-"/>
+                        </li>
+                        <li id="countnum">0</li>
+                        <li id="plus">
+                        <input type="button" onclick="adder()" value="+"/>
+                        </li>
+                    </ul>
+
+                    <!-- <div class="cart-amount">
                         <span>數量：</span>
                         <input type="number" min="0" placeholder="1">
-                    </div>
+                    </div> -->
                     <div class="cart-cancel">
                         <i class="fa-solid fa-xmark"></i>
                     </div>
@@ -149,5 +169,6 @@
         </footer>
     <!-- </div> -->
     
+    <script src="./js/javascript.js"></script>
 </body>
 </html>
