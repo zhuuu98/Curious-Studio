@@ -5,18 +5,19 @@ body{
     /* border: 1px solid green; */
 }
 
-.container{
+/* .container{
     width: 100%;
     background-color: #fffaf2;
     margin: auto;
-    /* border: 1px solid red; */
-}
+    border: 1px solid red; 
+} */
 
-main{
+/* main{
     width: 100%;
-    background-color: #fffaf2;
-    /* border: 1px solid red; */
-}
+    background-color: #fffaf2; 
+    border: 1px solid red;
+    background-color: orange;
+} */
 
 ul{
     list-style: none;
@@ -56,6 +57,7 @@ ul{
 
 img{
     vertical-align: middle;
+    width: 100%;
 }
 
 
@@ -137,11 +139,7 @@ a{
     color: #1F237D;
 }
 
-img{
-    width: 100%;
-}
-
-/* ========按鈕========== */
+/* ------按鈕------- */
 .btn {
     display: inline-block;
     position: relative;
@@ -192,7 +190,7 @@ img{
 .btn span:nth-child(4) {
     --n: 4;
 }
-/* =========按鈕======== */
+/* ---------按鈕---------- */
 
 
 
@@ -345,211 +343,7 @@ nav ul li:hover ul.dropdown{
 }
 
 
-
-/* =================首頁================= */
-
-/* ================= header ================= */
-
-.header{
-    /* background-color: aqua; */
-    background: url('../img/banner/header-banner.png'); 
-    background-size: contain;
-    width: 100%;
-    height: 700px;
-    /* border: 1px solid transparent; */
-    /* box-sizing: border-box; */
-    /* height: 1900px; */
-    background-repeat-Y: no-repeat;
-    
-}
-
-
-.index-title{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.intro .pic img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.banner{
-    /* height: 1023px; */
-    /* background: url('../img/banner/stardust.png'),linear-gradient(0deg, rgba(255,248,238,1) 0%, rgba(76,82,112,1) 20%, rgba(16,18,71,1) 100%); */
-    
-}
-
-.logo{
-    width: 400px;
-    /* border: 1px solid red; */
-    margin-left: 40%;
-    margin-top: 96px;
-}
-
-.logo img{
-    width: 100%;
-    /* border: 1px solid yellow; */
-}
-
-
-
-
-
-/* =========== intro + what ============ */
-
-.intro{
-    /* width: 100%; */
-    margin: auto;
-    /* border: 1px solid orange; */
-}
-
-.intro .text{
-    /* border: 1px solid red; */
-    margin: 0px -10px -10px -10px;
-}
-
-.intro .d-flex{
-    margin: 0px -10px 15px -10px;
-    /* border: 1px solid pink; */
-}
-
-
-.intro-d-flex{
-    display: flex;
-    margin: 100px auto;
-}
-
-
-.what{
-    padding: 130px 0;
-    /* border: 1px solid teal; */
-    /* background-color: teal; */
-}
-
-.what .pic{
-    margin: auto;
-}
-
-.what .pic img{
-    position: static;
-    transform: none;
-    width: 70%;
-}
-
-.what p{
-    width: 100%;
-    /* border: 1px red; */
-    /* background-color: aqua; */
-}
-
-
-
-
-
-/* ================= course ================= */
-.course{
-    background-color: #F5E5CC;
-    height: 400px;
-    display: flex;
-    /* border: 1px solid red; */
-    align-items: center;
-}
-
-.course-pic{
-    display: flex;
-    /* border: 1px solid yellow; */
-    margin-left: -50px;
-    align-items: center;
-}
-
-.course-pic img{
-    /* width: 20%; */
-    height: 300px;
-    margin: 20px 5px 20px 5px;
-    /* border: 1px solid orange; */
-}
-
-.course .section{
-    /* border: 1px solid red; */
-    height: 300px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.course h2{
-    /* border: 1px solid orange; */
-    padding: 0;
-
-}
-
-.course p{
-    /* border: 1px solid blue; */
-    width: 100%;
-}
-
-.course .course-btn{
-    /* border: 1px solid red; */
-    margin: auto;
-}
-
-
-
-
-
-
-/* ================= products ================ */
-.products-pic{
-    margin: 0px -10px;
-    /* border: 1px solid red; */
-}
-
-.products-list{
-    display: flex;
-    margin: 30px auto;
-    padding: 30px 0;
-    /* border: 1px solid red; */
-}
-
-.products-each{
-    width: 150px;
-    margin: auto;
-    /* border: 1px solid blue; */
-}
-
-.products-each img{
-    width: 100%;
-    border-radius: 50%;
-}
-
-.index-products-btn{
-    /* border: 1px solid red; */
-    display: flex;
-    padding: 10px 0 40px 0;
-    margin: auto;
-}
-
-.index-products-btn .btn{
-    margin: auto;
-}
-
-.index-price{
-    margin: auto;
-    text-align: center;
-    color: #5b5b5b;
-    font-size: 16px;
-    /* border: 1px solid red; */
-    font-family: Noto Sans TC;
-}
-
-
-
-
-
-
-/* ================= footer ================= */
+/* ---------  footer ---------  */
 
 footer{
     background-color: #1F237D;
@@ -612,13 +406,12 @@ footer .d-flex{
 
 footer a{
     color: #BEBEBE;
-
 }
 
 .contact{
     width: 20%;
-    /* border: 1px solid red; */
     margin: 10px 0px;
+    /* border: 1px solid red; */
 
 }
 
@@ -653,11 +446,311 @@ footer a{
     margin-right: 20px;
 }
 
+/* ---------  footer ---------  */
+
+
+/* -----數量----- */
+.aa{
+    /* border: 1px solid green; */
+}
+.counter{
+    padding: 0;
+    margin: auto 0;
+    /* background-color: #5b5b5b; */
+    border: 1px solid red;
+    width: 100px;
+    /* background-color: orange; */
+}
+
+.counter li{
+    float:left;
+    list-style-type:none;
+    width:30px;
+    height:30px;
+    text-align:center;
+    line-height:30px;
+    background-color:transparent;
+    border: 1px solid green;
+    border-radius: 80px;
+    /* background-color: orange; */
+
+}
+.counter li input{
+    font-size:20px;
+    width:100%;
+    height:100%;
+    outline:none;
+    -webkit-appearance:none;
+    background:none;
+    margin:0;
+    padding:0;
+    border: none;
+    border: 1px solid transparent;
+    /* border-radius: 0; */
+    /* background-color: orange; */
+
+}
+#countnum{
+    border-left:1px solid black;
+    border-right:1px solid black;
+    color:#666
+}
+
+.counter #minus input, #plus input{  
+    cursor: pointer;
+    /* background-color: orange; */
+
+}
+
+/* -----數量----- */
+
+/* -----數量2----- */
+.counter2{
+    padding: 0;
+    margin: auto 0;
+    /* border: 1px solid red; */
+    /* background-color: orange; */
+}
+
+.counter2 li{
+    float:left;
+    list-style-type:none;
+    width:30px;
+    height:30px;
+    text-align:center;
+    line-height:30px;
+    background-color:transparent;
+    /* border: 1px solid green; */
+    /* background-color: orange; */
+
+}
+.counter2 li input{
+    font-size:20px;
+    width:100%;
+    height:100%;
+    outline:none;
+    /* -webkit-appearance:none; */
+    background:none;
+    margin:0;
+    padding:0;
+    border: none;
+    /* border: 1px solid transparent; */
+    /* border-radius: 0; */
+    /* background-color: orange; */
+
+}
+#countnum2{
+    border-left:1px solid black;
+    border-right:1px solid black;
+    color:#666
+}
+
+.counter2 #minus2 input, #plus2 input{  
+    cursor: pointer;
+    /* background-color: orange; */
+
+}
+
+/* -----數量2----- */
+
+
+/* =================首頁================= */
+
+/* --------- header ----------- */
+
+.header{
+    background: url('../img/banner/header-banner.png'); 
+    background-size: contain;
+    width: 100%;
+    height: 700px;
+    background-repeat-Y: no-repeat;
+    /* background-color: aqua; */
+    
+}
+
+.index-title{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.intro .pic img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner{
+    /* height: 1023px; */
+    /* background: url('../img/banner/stardust.png'),linear-gradient(0deg, rgba(255,248,238,1) 0%, rgba(76,82,112,1) 20%, rgba(16,18,71,1) 100%); */
+    
+}
+
+.logo{
+    width: 400px;
+    /* border: 1px solid red; */
+    margin-left: 40%;
+    margin-top: 96px;
+}
+
+.logo img{
+    width: 100%;
+    /* border: 1px solid yellow; */
+}
+
+
+
+
+
+/* --------- intro + what ---------*/
+
+.intro{
+    /* width: 100%; */
+    margin: auto;
+    /* border: 1px solid orange; */
+}
+
+.intro .text{
+    /* border: 1px solid red; */
+    margin: 0px -10px -10px -10px;
+}
+
+.intro .d-flex{
+    margin: 0px -10px 15px -10px;
+    /* border: 1px solid pink; */
+}
+
+
+.intro-d-flex{
+    display: flex;
+    margin: 100px auto;
+}
+
+
+.what{
+    padding: 130px 0;
+    /* border: 1px solid teal; */
+    /* background-color: teal; */
+}
+
+.what .pic{
+    margin: auto;
+}
+
+.what .pic img{
+    position: static;
+    transform: none;
+    width: 70%;
+}
+
+.what p{
+    width: 100%;
+    /* border: 1px red; */
+    /* background-color: aqua; */
+}
+
+
+
+
+
+/* --------- course ---------  */
+.course{
+    background-color: #F5E5CC;
+    height: 400px;
+    display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
+}
+
+.course-pic{
+    display: flex;
+    /* border: 1px solid yellow; */
+    margin-left: -50px;
+    align-items: center;
+}
+
+.course-pic img{
+    /* width: 20%; */
+    height: 300px;
+    margin: 20px 5px 20px 5px;
+    /* border: 1px solid orange; */
+}
+
+.course .section{
+    /* border: 1px solid red; */
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course h2{
+    /* border: 1px solid orange; */
+    padding: 0;
+
+}
+
+.course p{
+    /* border: 1px solid blue; */
+    width: 100%;
+}
+
+.course .course-btn{
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+
+
+/* ---------  products ---------  */
+.products-pic{
+    margin: 0px -10px;
+    /* border: 1px solid red; */
+}
+
+.products-list{
+    display: flex;
+    margin: 30px auto;
+    padding: 30px 0;
+    /* border: 1px solid red; */
+}
+
+.products-each{
+    width: 150px;
+    margin: auto;
+    /* border: 1px solid blue; */
+}
+
+.products-each img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.index-products-btn{
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 10px 0 40px 0;
+    margin: auto;
+}
+
+.index-products-btn .btn{
+    margin: auto;
+}
+
+.index-price{
+    margin: auto;
+    text-align: center;
+    color: #5b5b5b;
+    font-size: 16px;
+    /* border: 1px solid red; */
+    font-family: Noto Sans TC;
+}
+
+
+
 
 
 
 /* =================登入================= */
-/* ================= header ================= */
 
 /* signin */
 .section-signin{
@@ -667,8 +760,6 @@ footer a{
     /* border: 1px solid red; */
     /* background-color: red; */
 }
-
-
 
 .section-signin h2{
     /* display: block; */
@@ -754,7 +845,7 @@ footer a{
 
 
 
-/* ===================預約課程================ */
+/* ==================預約課程============== */
 .d-flex-reservation{
     display: flex;
     margin: 20px auto 0 auto;
@@ -835,7 +926,7 @@ footer a{
 
 
 
-/* =================購物車================= */
+/* =================購物車=============== */
 
 .cart{
     /* border: 1px solid red; */
@@ -862,13 +953,6 @@ footer a{
     /* background-color: #6C6C6C; */
 }
 
-/* .cart-info .d-flex input{
-    background-color: #fffaf2;
-    border: 1px solid #6C6C6C;
-    border-radius: 5px;
-    padding-left: 5px;
-} */
-
 .cart-pic{
     width: 100px;
     margin: 0 -10px;
@@ -892,16 +976,6 @@ footer a{
     margin: auto 0 auto 30px;
     padding-bottom: 5px;
 }
-
-/* .cart-info .cart-amount{
-    margin: auto;
-    padding-bottom: 5px;
-    border: 1px solid green;
-}
-
-.cart-info .cart-amount input{
-    width: 100px;
-}  */
 
 .cart-info .cart-cancel{
     margin: auto 0;
@@ -977,54 +1051,13 @@ footer a{
 }
 
 
-/* -----數量----- */
-.counter{
-    padding: 0;
-    margin: auto 0;
-    /* border: 1px solid red; */
-    /* background-color: #5b5b5b; */
-}
-
-.counter li{
-    float:left;
-    list-style-type:none;
-    width:30px;
-    height:30px;
-    text-align:center;
-    line-height:30px;
-    background-color:transparent;
-    /* border: 1px solid green; */
-}
-.counter li input{
-    font-size:20px;
-    width:100%;
-    height:100%;
-    outline:none;
-    /* -webkit-appearance:none; */
-    background:none;
-    margin:0;
-    padding:0;
-    border: none;
-    /* border: 1px solid transparent; */
-    /* border-radius: 0; */
-}
-#countnum{
-    border-left:1px solid black;
-    border-right:1px solid black;
-    color:#666
-}
-
-.counter #minus input, #plus input{  
-    cursor: pointer;
-}
-
-/* -----數量----- */
 
 
 
 
 
-/* ====================所有商品==================== */
+
+/* =================所有商品================ */
 .products{
     margin: 30px auto 0 auto;
     /* border: 1px solid red; */
@@ -1044,7 +1077,7 @@ footer a{
     /* border: 1px solid red; */
 }
 
-/* ============= select bar ============== */
+/* ---------- select bar ---------- */
 
 .select-bars{
     display: flex;
@@ -1109,7 +1142,7 @@ footer a{
     /* border: 1px solid red; */
 }
 
-/* ============= select bar ============== */
+/* ---------- select bar ---------- */
 
 .products .d-flex{
     margin: 0;
@@ -1212,9 +1245,9 @@ footer a{
 
 
 
-/* ======================關於我====================== */
+/* ================關於我================ */
 
-.d-flex{
+.about-d-flex{
     margin: 30px auto 0px auto;
     /* border: 1px solid red; */
 }
