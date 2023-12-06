@@ -18,7 +18,11 @@ body{
     border: 1px solid red;
     background-color: orange;
 } */
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 ul{
     list-style: none;
     /* border: 1px solid red; */
@@ -391,16 +395,11 @@ footer .d-flex{
 }
 
 .footer-nav li{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     width: 50%;
     color: #BEBEBE;
     font-family: Noto Sans TC;
     font-size: 12px;
-    /* line-height: 14px; */
     padding-top: 3px;
-    /* height: 10px; */
     margin: 0px;
     /* border: 1px solid deeppink; */
 }
@@ -446,6 +445,55 @@ footer a{
     margin: 0;
     margin-right: 20px;
 }
+
+/* ----- mb-footer ------ */
+.mb-footer-title{
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    font-family: 'Julius Sans One','Kaisei Decol';
+    border: 1px solid red;
+}
+@media screen and (width>768px) {
+    .mb-footer-title{
+        display: none;
+        /* background-color: yellow; */
+    }
+}
+
+@media (width<=768px) {
+    .footer-nav{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+        margin: auto;
+        font-size: 12px;
+        justify-items: center;
+        /* border: 1px solid red; */
+    }
+    .add-border{
+    border-left: 1px solid #6c6c6c;
+    border-right: 1px solid #6c6c6c;
+    }
+    .mb-d-flex{
+        flex-direction: column;
+    }
+    .footer-nav ul{
+        padding-left: 0px;
+    }
+    .footer-nav li{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+.footer-nav li{
+    /* border: 1px solid lawngreen; */
+}
+
+
+/* ----- mb-footer ------ */
 
 /* ---------  footer ---------  */
 
