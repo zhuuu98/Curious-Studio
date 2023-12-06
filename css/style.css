@@ -73,7 +73,7 @@ img{
 
 
 
-h2{
+h1{
     color: #1F237D;
     font-family: 'Julius Sans One', 'Kaisei Decol';
     font-size: 24px;
@@ -83,18 +83,18 @@ h2{
     /* border: 1px solid #fa0; */
 }
 @media screen and (width<=768px){
-    h2{font-size: 16px;
+    h1{font-size: 16px;
     }
 }
 
-h3{
+h2{
     font-size: 22px;
     color: black;
     margin: 0;
     line-height: 30px;
 }
 
-h4{
+h3{
     font-size: 18px;
     text-align: center;
     color: black;
@@ -686,7 +686,7 @@ footer a{
     flex-wrap: wrap;
 }
 
-.course h2{
+.course h1{
     padding: 0;
     /* border: 1px solid orange; */
 
@@ -803,7 +803,7 @@ footer a{
     /* background-color: red; */
 }
 
-.section-signin h2{
+.section-signin h1{
     /* display: block; */
     margin: 30px 0 20px 0;
     /* border: 1px solid red; */
@@ -826,7 +826,7 @@ footer a{
     .section-signin input{
         width: 70%;
         line-height: 20px;
-        background-color: red;
+        background-color: deeppink;
     }
 }
 
@@ -1014,7 +1014,7 @@ footer a{
     margin: 0;
 }
 
-.cart-info h4{
+.cart-info h3{
     margin: auto 0 auto 10px;
 }
 
@@ -1323,7 +1323,7 @@ footer a{
     width: 75%;
 }
 
-.about-section h2{
+.about-section h1{
     margin-top: 60px;
     font-size: 20px;
     /* border: 1px solid red; */
