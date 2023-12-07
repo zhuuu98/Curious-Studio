@@ -208,6 +208,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 5;
+    position: relative;
 }
 
 .title{
@@ -357,6 +358,190 @@ nav ul li:hover ul.dropdown{
         margin-top: 10px;
     }
 }
+
+/* -------- hamburger ---------- */
+
+.hamburger{
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    margin: auto 15px;
+    /* background-color: aqua; */
+    /* border: 1px solid orange; */
+}
+
+.ham-menu{
+    background-color: #aaa;
+    height: 100vh;
+}
+
+.ham-bar{
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+}
+
+input#hamburger{
+    display: none;
+}
+
+
+#hamburger[type="checkbox"]:checked ~ .ham-menu{
+    max-height: 100vh;
+    display: block;
+}
+
+.ham-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    
+}
+
+.ham-menu li{
+    border-bottom: 1px solid #6C6C6C;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.ham-menu li a{
+    box-sizing: border-box;
+    /* background-color: lightblue; */
+}
+
+.ham-menu li .icon{
+    width: 30px; */
+    height: 30px;
+    padding: 20px;
+    display: flex;
+    margin-right: 100px;
+    align-items: center;
+    justify-content: center;
+    /* /* background-color: red; */
+}
+
+.ham-search{
+    display: flex;
+}
+
+.ham-search-bar{
+    display: inline;
+    border-radius: 10px;
+    width: 260px;
+    height: 26px;
+    padding-left: 8px;
+    margin: 8px auto 8px 15px;
+    /* background-color: red; */
+}
+
+.ham-search-logo{
+    display: inline;
+    margin: 0;
+    padding: 0px;
+    background-color: orange;
+
+}
+
+
+@media (width<=768px) {
+    #hamburger{
+        display: flex;
+        cursor: pointer;
+    }
+    .ham-menu{
+        /* background-color: #aaa; */
+        /* background-color: lightblue; */
+        width: 80%;
+    }
+    .ham-menu-nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .ham-menu ul li{
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        /* background-color: deeppink; */
+    } 
+    .ham-menu ul li a{
+        padding: 15px 0 15px 20px;
+        display: block;
+        color: #1F237D;
+        font-size: 20px;
+        font-family: 'Kaisei Decol';
+        width: 100%;
+    }
+}
+
+/* -----子選單------- */
+
+/* .products-li{
+    display: flex;
+} */
+
+/* .ham-menu .ham-menu-nav .ham-dropdown{
+    display: none;
+    width: 100%;
+    display: inline;
+    background-color: #0002;
+    box-shadow: 0px 4px 4px #0003 inset,
+                0px -4px 4px #0003 inset;
+} */
+
+.products-li .ham-dropdown li{
+    /* border: 1px solid #fff; */
+    padding-left: 15px;
+}
+
+
+.ham-menu input[type="checkbox"]{
+    /* display: none; */
+}
+
+
+
+
+
+
+
+
+
+@media (width<=768px) {
+    /* .ham-dropdown{
+        max-height: 0px;
+        overflow: hidden;
+        background-color: #f80;
+        box-shadow: 0px 8px 8px #0003 inset,
+                    0px -8px 8px #0003 inset;
+        transition: max-height 1s;
+    } */
+    .ham-menu .ham-menu-nav .ham-dropdown{
+        display: none;
+        width: 100%;
+        background-color: orange;
+        display: inline;
+        /* background-color: #0002; */
+        box-shadow: 0px 4px 4px #0003 inset,
+                    0px -4px 4px #0003 inset;
+    }
+
+.ham-menu .ham-menu-nav .products-li #sub-switch[type="checkbox"]:checked ~ .ham-dropdown {
+    display: block;
+}
+}
+/* -----子選單------- */
+
+/* -------- hamburger ---------- */
+
 
 
 /* ---------  footer ---------  */
