@@ -26,9 +26,10 @@
             border: 1px solid red;
         }
     </style>
+    
 </head>
 <body>
-    <a href="javascript: void(0)" class="btn">
+    <!-- <a href="javascript: void(0)" class="btn">
         Button
         <span></span><span></span><span></span><span></span>
     </a>
@@ -45,12 +46,42 @@
         <div id="minus2"><input type="button" onclick="minuser2()" value="-"/></div>
         <div id="countnum2">0</div>
         <div id="plus2"><input type="button" onclick="adder2()" value="+"/></div>
+    </div> -->
+
+
+    <div class="counter">
+        <input type="button" value="-" class="minus"/>
+        <input type="text" value="0" class="countnum"></input>
+        <input type="button" value="+" class="plus"/>
     </div>
 
+    <script>
+        function init(){
+            let btnMinus = document.getElementsByClassName("minus");
+            let btnPlus = document.getElementsByClassName("plus");
+        
+
+        for(let i=0; i<btnMinus.length; i++){
+            btnMinus[i].onclick = function(e){
+            let countnumObj = e.target.nextElementSibling;
+            let countnum = parseInt(countnumObj.value);
+            if(countnum>0){
+                countnumObj.value = countnum -1
+            }
+        }
+            btnPlus[i].onclick = function(e){
+            let countnumObj = e.target.previousElementSibling;
+            let countnum = parseInt(countnumObj.value);
+                countnumObj.value = countnum +1
+            }
+        }
+    }
+        window.addEventListener("load", init, false);
+    </script>
 
 
 
-    <script src="./js/javascript.js"></script>
+    <!-- <script src="./js/javascript.js"></script> -->
 
 
     

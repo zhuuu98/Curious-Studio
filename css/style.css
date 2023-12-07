@@ -87,7 +87,7 @@ h1{
     /* border: 1px solid #fa0; */
 }
 @media screen and (width<=768px){
-    h1{font-size: 16px;
+    h1{font-size: 24px;
     }
 }
 
@@ -230,6 +230,13 @@ header .header-logo img{
     /* border: 1px solid teal; */
 }
 
+@media (width<=768px) {
+    .header-logo{
+        margin: auto 15px;
+        /* border: 1px solid red; */
+    }
+}
+
 nav{
     display: flex;
     margin: 0;
@@ -344,6 +351,10 @@ nav ul li:hover ul.dropdown{
     }
     .small-banner-text{
         margin-top: 20px;
+        background-color: transparent;
+        margin: auto;
+        color: #1F237D;
+        margin-top: 10px;
     }
 }
 
@@ -452,7 +463,7 @@ footer a{
     text-align: center;
     color: #fff;
     font-family: 'Julius Sans One','Kaisei Decol';
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 @media screen and (width>768px) {
     .mb-footer-title{
@@ -466,6 +477,7 @@ footer a{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         width: 80%;
+        height: 100px;
         margin: auto;
         font-size: 12px;
         justify-items: center;
@@ -486,6 +498,20 @@ footer a{
         margin: auto;
         text-align: center;
     }
+    .contact{
+        margin: auto;
+        width: 80%;
+        text-align: center;
+        /* border: 1px solid red; */
+    }
+    .copyright{
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+    .copyright p{
+        text-align: center;
+        margin: auto;
+    }
 }
 
 .footer-nav li{
@@ -503,106 +529,37 @@ footer a{
 .counter{
     padding: 0;
     margin: auto 0;
-    /* background-color: #5b5b5b; */
+    color: black;
     /* border: 1px solid red; */
-    /* width: 100px; */
-    /* background-color: orange; */
 }
 
-.counter li{
-    float:left;
-    list-style-type:none;
-    width:30px;
-    height:30px;
-    text-align:center;
-    line-height:30px;
-    background-color:transparent;
-    /* border: 1px solid green; */
-    /* border-radius: 80px; */
-    /* background-color: orange; */
-
-}
-.counter li input{
-    font-size:20px;
-    width:100%;
-    height:100%;
-    outline:none;
-    -webkit-appearance:none;
-    background:none;
-    margin:0;
-    padding:0;
+.countnum{
+    width: 30px;
+    height: 20px;
+    text-align: center;
     border: none;
-    border: 1px solid transparent;
-    /* border-radius: 0; */
-    /* background-color: orange; */
-
-}
-#countnum{
-    border-left:1px solid black;
-    border-right:1px solid black;
-    color:black;
-    font-size: 16px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    outline: none;
     font-family: 'Noto Sans TC';
+    font-size: 14px;
+    background-color: transparent;
 }
 
-.counter #minus input, #plus input{  
+.counter .minus, .plus{  
+    background-color: transparent;
+    border: none;
+    width: 20px;
     cursor: pointer;
-    /* background-color: orange; */
+}
 
+.counter input{
+    color: black;
 }
 
 /* -----數量----- */
 
-/* -----數量2----- */
-.counter2{
-    padding: 0;
-    margin: auto 0;
-    /* border: 1px solid red; */
-    /* background-color: orange; */
-}
 
-.counter2 li{
-    float:left;
-    list-style-type:none;
-    width:30px;
-    height:30px;
-    text-align:center;
-    line-height:30px;
-    background-color:transparent;
-    /* border: 1px solid green; */
-    /* background-color: orange; */
-
-}
-.counter2 li input{
-    font-size:20px;
-    width:100%;
-    height:100%;
-    outline:none;
-    /* -webkit-appearance:none; */
-    background:none;
-    margin:0;
-    padding:0;
-    border: none;
-    /* border: 1px solid transparent; */
-    /* border-radius: 0; */
-    /* background-color: orange; */
-
-}
-#countnum2{
-    border-left:1px solid black;
-    border-right:1px solid black;
-    color:black;
-    font-size: 16px;
-    font-family: 'Noto Sans TC';
-}
-
-.counter2 #minus2 input, #plus2 input{  
-    cursor: pointer;
-    /* background-color: orange; */
-
-}
-
-/* -----數量2----- */
 
 
 /* =================首頁================= */
@@ -865,6 +822,7 @@ footer a{
     width: 30%;
     background-color: #00000000;
     border: none;
+    border-radius: 0px;
     border-bottom: 1px solid black;
     outline: none;
     /* border: 1px solid red; */
@@ -874,7 +832,7 @@ footer a{
     .section-signin input{
         width: 70%;
         line-height: 20px;
-        background-color: deeppink;
+        /* background-color: deeppink; */
     }
 }
 
@@ -1023,16 +981,88 @@ footer a{
 /* =================購物車=============== */
 
 .cart{
-    /* border: 1px solid red; */
     margin: 30px auto 0px auto;
     position: relative;
+    padding: 0px;
+    /* border: 1px solid red; */
 }
 
 .cart-info{
     display: flex;
-    /* padding: 15px 0; */
     margin: 15px 0;
+    padding: 0px;
     /* border: 1px solid blue; */
+}
+
+@media (width<=768px) {
+    .cart{
+        /* display: flex;
+        flex-wrap: wrap; */
+    }
+    .cart .cart-info{
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto 20px auto;
+    }
+    .cart .cart-pic{
+        width: 180px;
+        margin: 0 auto;
+        position: relative;
+        /* border: 1px solid red; */
+    }
+    .cart .cart-info .d-flex{
+        flex-direction: column;
+        margin: auto;
+        padding: 0px;
+        /* border: 1px solid blue; */
+    }
+    .cart .cart-info .mb-d-flex{
+        margin: auto;
+    }
+    .cart .cart-info h3{
+        margin: 8px auto 0px auto;
+    }
+    .cart .cart-info .price{
+        margin: 8px auto 0px auto;
+    }
+    .cart .counter{
+        margin: 8px auto 0px auto;
+        font-size: 12px;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .cart .counter input{
+        font-family: 'Noto Sans TC';
+        font-size: 14px;
+        border-radius: 0px;
+    }
+
+    .cart  .counter .minus, .plus{
+        line-height: 20px;
+        margin: auto 0px;
+        padding-bottom: 0px;
+        align-content: center;
+        /* border: 1px solid lawngreen; */
+    }
+
+    .cart-cancel{
+        display: none;
+    }
+}
+
+@media (width>768px) {
+    .mb-cart-cancel{
+        display: none;
+    }
+}
+
+.mb-cart-cancel{
+    position: absolute;
+    top: 2px;
+    right: 15px;
+    cursor: pointer;
 }
 
 .cart-info:nth-child(1){
@@ -1074,6 +1104,7 @@ footer a{
 .cart-info .cart-cancel{
     margin: auto 0;
     padding-bottom: 3px;
+    cursor: pointer;
     /* border: 1px solid red; */
 }
 
@@ -1101,6 +1132,7 @@ footer a{
     padding-top: 15px;
     width: 200px;
     margin: 10px 0px;
+    font-family: 'Noto Sans TC';
     /* border: 1px solid green; */
 }
 

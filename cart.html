@@ -63,47 +63,46 @@
         </div>
 
         <div class="cart col-9">
-
             <div class="cart-info col-12">
                 <div class="cart-pic col-2">
                     <img src="./img/reservation/large-ring.png" alt="small-ring-1">
+            <div class="mb-cart-cancel">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
                 </div>
-                <div class="d-flex col-10">
+                <div class="d-flex mb-d-flex col-10">
                     <h3>銀黏土寶石戒指課程</h3>
+
                     <div class="price">$1,800</div>
 
-                    <ul class="counter">
-                        <li id="minus">
-                        <input type="button" onclick="minuser()" value="-"/>
-                        </li>
-                        <li id="countnum">0</li>
-                        <li id="plus">
-                        <input type="button" onclick="adder()" value="+"/>
-                        </li>
-                    </ul>
-                    <div class="cart-cancel">
-                        <i class="fa-solid fa-xmark"></i>
+                    <div class="counter">
+                        <input type="button" value="-" class="minus"/>
+                        <input type="text" value="0" class="countnum"></input>
+                        <input type="button" value="+" class="plus"/>
                     </div>
+                    
+                        <div class="cart-cancel">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div> 
                 </div>
             </div>
 
             <div class="cart-info col-12">
                 <div class="cart-pic col-2">
                     <img src="./img/reservation/large-ring.png" alt="small-ring-1">
+                    <div class="mb-cart-cancel">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
                 </div>
                 <div class="d-flex col-10">
                     <h3>銀黏土寶石戒指課程</h3>
                     <div class="price">$1,800</div>
 
-                    <ul class="counter2">
-                        <li id="minus2">
-                        <input type="button" onclick="minuser2()" value="-"/>
-                        </li>
-                        <li id="countnum2">0</li>
-                        <li id="plus2">
-                        <input type="button" onclick="adder2()" value="+"/>
-                        </li>
-                    </ul>
+                    <div class="counter">
+                        <input type="button" value="-" class="minus"/>
+                        <input type="text" value="0" class="countnum"></input>
+                        <input type="button" value="+" class="plus"/>
+                    </div>
 
                     <div class="cart-cancel">
                         <i class="fa-solid fa-xmark"></i>
@@ -137,19 +136,20 @@
         </div>
         
         <footer>
-            <div class="d-flex">
+            <p class="mb-footer-title">Curious Studio<br>好奇工作室</p>
+            <div class="d-flex mb-d-flex">
                 <div class="footer-logo col-2">
                     <a href="./index.html"><img src="./img/logo/v2-white-logo-large.png" alt=""></a>
                 </div>
-                <ul class="footer-nav col-3">
+                <ul class="footer-nav ">
                     <li><a href="./products.html">所有商品</a></li>
-                    <li><a href="./about.html">關於我們</a></li>
+                    <li class="add-border"><a href="./about.html">關於我們</a></li>
                     <li><a href="./reservation.html">預約課程</a></li>
                     <li><a href="./signin.html">我的帳戶</a></li>
-                    <li><a href="./news.html">最新消息</a></li>
+                    <li class="add-border"><a href="./news.html">最新消息</a></li>
                     <li><a href="./cart.html">購物車</a></li>
                 </ul>
-                <ul class="contact col-3">
+                <ul class="contact">
                     <li>CONTACT</li>
                     <li>電話：(02) 1234-1234</li>
                     <li>信箱：service@curious.com</li>
