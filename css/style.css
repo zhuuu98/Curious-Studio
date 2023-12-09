@@ -155,8 +155,11 @@ a{
         /* border: 1px solid red; */
     }
     .highlight{
+        display: block;
+        text-align: center;
         font-size: 16px;
         line-height: 22px;
+        /* border: 1px solid red; */
     }
     .fz22{
         font-size: 20px;
@@ -227,6 +230,9 @@ header{
     justify-content: space-between;
     z-index: 5;
     position: relative;
+    position: sticky;
+    top: 0;
+    /* border: 1px solid red; */
 }
 
 .title{
@@ -468,10 +474,10 @@ input#hamburger{
     border: 2px solid #6c6c6c;
     display: inline;
     border-radius: 10px;
-    width: 260px;
-    height: 26px;
+    width: 90%;
+    height: 36px;
     padding-left: 8px;
-    margin: 8px auto 8px 15px;
+    margin: 8px auto;
     /* background-color: red; */
 }
 
@@ -773,6 +779,8 @@ footer a{
 .index-title{
     display: flex;
     justify-content: flex-end;
+    padding: 8px 0px;
+    /* border: 1px solid red; */
 }
 
 .index-ring{
@@ -801,7 +809,7 @@ footer a{
 }
 
 @media (width>768px) {
-    header{
+    .index-mb-header{
         display: none;
     }
     .mb-banner{
@@ -904,9 +912,6 @@ footer a{
         width: 90%;
         margin: auto;
         /* border: 1px solid blue; */
-    }
-    .intro .text .highlight{
-        margin-bottom: 16px;
     }
     .intro-d-flex{
         display: flex;
@@ -1023,25 +1028,6 @@ footer a{
     /* border: 1px solid red; */
 }
 
-@media (width<=768px) {
-    .products-list{
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 0;
-        /* border: 1px solid orange; */
-
-    }
-    .products-each{
-        width: 45%;
-        padding-top: 24px;
-        /* border: 1px solid red; */
-    }
-    .products-each:first-child, .products-each:nth-child(2){
-        padding-top: 0px;
-        /* border: 1px solid red; */
-    }
-}
-
 .products-each{
     width: 150px;
     margin: auto;
@@ -1085,6 +1071,25 @@ footer a{
     font-size: 16px;
     /* border: 1px solid red; */
     font-family: Noto Sans TC;
+}
+
+@media (width<=768px) {
+    .products-list{
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+        /* border: 1px solid orange; */
+
+    }
+    .products-each{
+        width: 45%;
+        padding-top: 24px;
+        /* border: 1px solid red; */
+    }
+    .products-each:first-child, .products-each:nth-child(2){
+        padding-top: 0px;
+        /* border: 1px solid red; */
+    }
 }
 
 .top{
@@ -1279,7 +1284,8 @@ footer a{
 }
 
 .section-reservation .btn{
-    margin-top: 15px;
+    margin-top: 16px;
+    /* border: 1px solid red; */
 }
 
 .text{
@@ -1296,8 +1302,9 @@ footer a{
     /* border: 2px solid yellow; */
 }
 
-.reservation-counter{
-    margin: 10px 0px;
+.section-reservation .counter{
+    margin: 4px 0px;
+    /* border: 1px solid red; */
 }
 
 
@@ -1511,11 +1518,8 @@ footer a{
 /* =================所有商品================ */
 .products{
     margin: 30px auto 0 auto;
+    width: 75%;
     /* border: 1px solid red; */
-}
-
-.products .col-12{
-    padding: 0px;
 }
 
 .card:hover img{
@@ -1528,9 +1532,19 @@ footer a{
     /* border: 1px solid red; */
 }
 
+@media (width<=768px) {
+    .products{
+        margin: 0px auto;
+        width: 90%;
+        /* border: 1px solid red; */
+    }
+    
+}
 /* ---------- select bar ---------- */
 
 .select-bars{
+    width: 100%;
+    padding: 0;
     display: flex;
     padding: 0px;
     /* border: 1px solid green; */
@@ -1602,10 +1616,12 @@ footer a{
     border: 2px solid #1F237D;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid red; */
 }
 
 .card{
     margin: 10px 20px;
+    /* border: 1px solid red; */
 }
 
 .card a{
@@ -1616,6 +1632,26 @@ footer a{
     width: 150px;
     border-radius: 50%;
     overflow: hidden;
+}
+
+@media (width<=768px) {
+    .products .d-flex{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* border: 1px solid orange; */
+    }
+    .card{
+        width: 48%;
+        box-sizing: border-box;
+        margin: 2px;
+        /* border: 1px solid red; */
+    }
+    .card-pic{
+        width: 90%;
+        margin: auto;
+        /* border: 1px solid blue; */
+    }
 }
 
 .card-pic img{
@@ -1887,11 +1923,20 @@ footer a{
 /* =================工具================ */
 .tools{
     margin: 30px auto 0 auto;
+    width: 75%;
     /* border: 1px solid red; */
 }
 
-.tools .col-12{
+.tools .select-bars{
+    width: 100%;
     padding: 0px;
+}
+
+@media (width<=768px) {
+    .tools{
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
 /* ---------- select bar ----------- */

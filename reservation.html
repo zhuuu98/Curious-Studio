@@ -121,15 +121,11 @@
                     <input type="time" value="09:00" min="09:00" max="19:00">
                 </div>
                 <div class="chose-text">人數</div>
-                <ul class="counter reservation-counter">
-                    <li id="minus">
-                    <input type="button" onclick="minuser()" value="-"/>
-                    </li>
-                    <li id="countnum">0</li>
-                    <li id="plus">
-                    <input type="button" onclick="adder()" value="+"/>
-                    </li>
-                </ul>
+                <div class="counter">
+                    <input type="button" value="-" class="minus"/>
+                    <input type="text" value="0" class="countnum"></input>
+                    <input type="button" value="+" class="plus"/>
+                </div>
 
                 <a href="./cart.html" class="btn">
                     立即預約
