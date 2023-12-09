@@ -26,7 +26,46 @@
 </head>
 <body>
     <!-- <div class="container"> -->
+
+        <header>
+            <div class="header-logo"><a href="./index.html">
+                <img src="./img/logo/header-logo.png" alt="header_logo">
+            </a></div>
+
+            <input type="checkbox" id="hamburger">
+                    <label class="hamburger" id="hamburger" for="hamburger">
+                            <span class="ham-bar"></span>
+                            <span class="ham-bar"></span>
+                            <span class="ham-bar"></span>
+                    </label>
+
+        <nav class="ham-menu">
+            <div class="ham-search">
+                <input type="text" class="ham-search-bar" placeholder="搜尋...">
+            </div>
+
+                    <ul class="ham-menu-nav">
+                        <li class="products-li">
+                            <a href="./products.html" >所有商品</a>
+                            <input type="checkbox" name="" id="sub-switch">
+                            <label for="sub-switch" class="icon "><i class="fa-solid fa-sort-down"></i></label>
+                            <ul class="ham-dropdown">
+                                <li><a href="./products.html">飾品</a></li>
+                                <li><a href="./tools.html">工具</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./reservation.html">預約課程</a></li>
+                        <li><a href="./news.html">最新消息</a></li>
+                        <li><a href="./about.html">關於我們</a></li>
+                        <li><a href="./cart.html">購物車</a></li>
+                        <li><a href="./signin.html">登入</a></li>
+                    </ul>
+        </nav>
+        </header>
+
+        
         <div class="header">
+
             <div class="index-title" id="index-title">
                 <nav>
                     <ul>
@@ -49,6 +88,7 @@
                     <input type="search" name="search" class="search-bar" placeholder=" ">
                 </div>
             </nav>
+            
             </div>
             <div class="banner col-12">
                 <div class="logo">
@@ -58,59 +98,61 @@
         </div>
             
             
-        <div class="intro col-9">
+        <div class="mb-banner">
+            <img src="./img/index/mb-index.png" alt="mb-banner">
+        </div>
+        
+        <div class="intro">
             <div class="d-flex col-12">
-                <p class="text col-7">
-                    <span class="highlight"><span class="fz22">歡迎來到Curious Studio 好奇工作室</span><br>
+                <p class="text">
+                    <span class="highlight"><span class="fz22">歡迎來到<br>Curious Studio 好奇工作室</span><br>
                     創造獨特銀飾品和寶石戒指的夢想之地！</span><br>
                     除了提供精緻的銀飾品，我們也開辦寶石戒指製作課程，<br>讓您親自動手打造屬於自己的戒指。<br>
-                    在課程中，您將學習使用銀黏土，並製作出獨特風格的<br>戒指設計。不論您是否有手作經驗，我們都歡迎您加入，<br>體驗創造的樂趣並帶走自己親手製作的戒指。<br>
+                    在課程中，您將學習使用銀黏土，並製作出獨特風格的戒指設計。不論您是否有手作經驗，我們都歡迎您加入，<br>體驗創造的樂趣並帶走自己親手製作的戒指。<br>
                     期待與您一同體驗製作屬於您的特別寶石戒指！
                 </p>
-                <div class="pic col-5">
+                <div class="pic index-ring">
                     <img src="img/index/intro.png" alt="intro_ring">
                 </div>
             </div>
         </div>
 
-        <div class="intro-d-flex what col-9">
-            <div class="pic col-5">
+        <div class="intro-d-flex what">
+            <div class="pic">
                 <img src="./img/index/silver_clay.png" alt="silver_clay">
             </div>
-            <section class="col-7">
+            <section class="what-text">
                 <h1>銀黏土是什麼？</h1>
                 <p>銀黏土（Silver Clay）是結合純銀粉和有機樹脂、 類似黏土的材料，特點是容易塑型。經風乾及烤製後為999純銀，適合加上寶石，製作小飾品。</p>
             </section>
         </div>
 
-        <div class="course col=12">
-            <div class="course-pic col-8">
+        <div class="course">
+            <div class="course-pic">
                 <img src="./img/index/c1.png" alt="course1" >
                 <img src="./img/index/c2.png" alt="course2" >
                 <img src="./img/index/c3.png" alt="course3" >
                 <img src="./img/index/c4.png" alt="course4" >
             </div>
-            <div class="section col-4">
+            <div class="section">
                 <h1>體驗課程</h1>
                 <p>本課程適合想擁有屬於自己獨一無二飾品、留下特別回憶的人。<br>
                 銀黏土是創意領域的寶藏，可以激發個人創造力，讓每個人都擁有獨特作品！</p>
                 <div class="course-btn">
-
                     <a href="./reservation.html" class="btn">
                         立即預約
                         <span></span><span></span><span></span><span></span>
                     </a>
-
                 </div>
             </div>
         </div>
 
-        <div class="index-products col-12">
+        <div class="index-products">
             <div class="products-pic">
                 <img src="./img/index/products.pic.png" alt="products.pic">
             </div>
 
-            <div class="products-list col-10">
+            <div class="products-list">
                 <div class="products-each">
                     <div class="product-pic">
                         <a href="./product1.html"><img src="./img/products/p1.jpg" alt="p1"></a>
@@ -137,6 +179,11 @@
                     <div class="product-pic"><a href="#"><img src="./img/products/p5.jpg" alt="p5"></a></div>
                     <a href="#"><h3>雙重耳環</h3></a>
                     <p class="index-price">$1,000</p>
+                </div>
+                <div class="products-each">
+                    <div class="product-pic"><a href="#"><img src="./img/products/p6.jpg" alt="p6"></a></div>
+                    <a href="#"><h3>金光閃閃戒指組</h3></a>
+                    <p class="index-price">$1,200</p>
                 </div>
             </div>
 
