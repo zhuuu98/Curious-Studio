@@ -810,7 +810,8 @@ footer a{
 
 @media (width>768px) {
     .index-mb-header{
-        display: none;
+        z-index: 3;
+        /* display: none; */
     }
     .mb-banner{
         display: none;
