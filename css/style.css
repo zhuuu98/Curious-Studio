@@ -563,22 +563,25 @@ input#hamburger{
 /* ---------  footer ---------  */
 
 footer{
+    width: 100%;
     background-color: #1F237D;
     color: #BEBEBE;
     padding: 10px 10px;
+    /* border: 1px solid red; */
 }
 
 footer .d-flex{
-    justify-content: space-evenly;
     border-bottom: 1px solid #bebebe;
     margin: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
     /* border: 1px solid white; */
 }
 
 .footer-logo{
-    /* width: 10%; */
-    /* border: 1px solid #fa0; */
+    width: 15%;
     align-items: start;
+    /* border: 1px solid #fa0; */
 }
 
 @media screen and (width<=768px) {
@@ -589,12 +592,13 @@ footer .d-flex{
 
 .footer-logo img{
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .footer-nav{
     box-sizing: border-box;
     height: 145px;
+    width: 30%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -604,6 +608,7 @@ footer .d-flex{
 
 .footer-nav ul{
     height: 20px;
+    /* border: 1px solid blueviolet; */
 }
 
 .footer-nav li{
@@ -633,8 +638,8 @@ footer a{
     font-size: 12px;
     /* font-weight: 400; */
     line-height: 25px;
-    /* border: 1px solid white; */
     padding: 0 0 5px 0;
+    /* border: 1px solid white; */
 }
 
 .contact li:first-child{
@@ -653,9 +658,9 @@ footer a{
     font-family: Noto Sans TC;
     text-align: right;
     width: auto;
-    /* border: 1px solid red; */
     margin: 0;
     margin-right: 20px;
+    /* border: 1px solid red; */
 }
 
 /* ----- mb-footer ------ */
@@ -674,7 +679,7 @@ footer a{
     }
 }
 
-@media (width<=768px) {
+@media (width<=768px) { 
     .footer-nav{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -687,8 +692,8 @@ footer a{
     .add-border{
     border-left: 1px solid #6c6c6c;
     border-right: 1px solid #6c6c6c;
-    }
-    .mb-d-flex{
+        }
+        .mb-d-flex{
         flex-direction: column;
     }
     .footer-nav ul{
@@ -715,9 +720,7 @@ footer a{
     }
 }
 
-.footer-nav li{
-    /* border: 1px solid lawngreen; */
-}
+
 
 
 /* ----- mb-footer ------ */
@@ -734,6 +737,7 @@ footer a{
     /* border: 1px solid red; */
 }
 
+
 .countnum{
     width: 30px;
     height: 20px;
@@ -745,6 +749,12 @@ footer a{
     font-family: 'Noto Sans TC';
     font-size: 14px;
     background-color: transparent;
+}
+
+@media (width<=768px) {
+    .countnum{
+        border-radius: 0px;
+    }
 }
 
 .counter .minus, .plus{  
@@ -1228,18 +1238,21 @@ footer a{
 .d-flex-reservation{
     display: flex;
     margin: 20px auto 0 auto;
+    width: 75%;
+    /* border: 1px solid red; */
 }
 
+
 .section-reservation{
-    /* margin: 0; */
     margin-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: start;
-    /* border: 1px solid red; */
+    /* border: 1px solid blue; */
 }
 
 .reservation-pic{
+    width: 50%;
     /* border: 1px solid red; */
 }
 
@@ -1268,6 +1281,10 @@ footer a{
     
 }
 
+.section-reservation{
+    width: 50%;
+}
+
 .chose-text{
     font-family: 'Noto Sans TC';
     font-size: 16px;
@@ -1289,14 +1306,14 @@ footer a{
     /* border: 1px solid red; */
 }
 
-.text{
+.reservation-text{
     margin: auto;
-    width: 638px;
+    width: 58.3333%;
     /* border: 1px solid red; */
 }
 
-.text p{
-    margin: 10px 0 50px 10px;
+.reservation-text p{
+    margin: 8px 0 24px 0px;
     /* background-color: #5b5b5b; */
     width: 100%;
     font-size: 14px;
@@ -1308,7 +1325,41 @@ footer a{
     /* border: 1px solid red; */
 }
 
-
+@media (width<=768px) {
+    .d-flex-reservation{
+        width: 90%;
+        flex-direction: column;
+    }
+    .section-reservation{
+        width: 100%;
+    }
+    .large-pic{
+        width: 100%;
+        /* border: 1px solid blue; */
+    }
+    .reservation-pic{
+        width: 100%;
+        /* border: 1px solid orange; */
+    }
+    .small-pics{
+        width: 96%;
+        padding-left: 1px;
+        /* border: 1px solid red; */
+    }
+    .small-pics img{
+        width: 24%;
+    }
+    .section-reservation{
+        margin: auto;
+        width: 79%;
+        /* border: 1px solid red; */
+    }
+    .reservation-text{
+        width: 71%;
+        margin: 16px auto 30px auto;
+        /* border: 1px solid red; */
+}
+}
 
 
 /* =================購物車=============== */
@@ -1852,14 +1903,14 @@ footer a{
     left: -5px; 
 } 
 
-.contact{
+.about-contact{
     width: 75%;
 }
 
-.contact p{
+.about-contact p{
     font-size: 14px;
     line-height: 18px;
-    margin: 10px -10px;
+    margin: 10px 0px;
     /* border: 1px solid red; */
 }
 
@@ -1877,14 +1928,14 @@ footer a{
         /* border: 1px solid red; */
     }
     .about-d-flex{
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column-reverse;
         margin-top: 16px;
         /* border: 1px solid rebeccapurple; */
     }
     .about-section-intro{
-        width: 100%;
+        width: 90%;
         /* border: 1px solid red; */
     }
     .about-logo{
@@ -1915,19 +1966,23 @@ footer a{
     .timeline li:nth-child(odd){
         padding-right: 20px;
     }
-    .about-section .contact{
+    .about-section .about-contact{
         /* font-size: 14px; */
         text-align: start;
         width: 100%;
         /* border: 1px solid blue; */
     }
-    .contact p{
+    .about-contact{
+        width: 80%;
+        /* border: 1px solid red; */
+    }
+    .about-contact p{
         width: 100%;
         /* border: 1px solid orange; */
     }
     .map{
         width: 100%;
-        margin: 12px 0 0 0;
+        margin-top: 12px;
     }
 }
 
@@ -2003,22 +2058,29 @@ footer a{
 
 
 
-/* ===============商品================*/
+/* =============== 商品1 ================*/
 
 
 .product1{
     margin: 20px auto 0 auto;
+    width: 75%;
+    display: flex;
     /* border: 1px solid red; */
 }
 
 .section-product1{
-    /* margin: 0; */
+    width: 50%;
     margin-left: 20px;
     height: 300px;
     display: flex;
     flex-direction: column;
     align-items: start;
-    
+    /* border: 1px solid green; */
+}
+
+.product1-pic{
+    width: 50%;
+    /* border: 1px solid orange; */
 }
 
 .section-product1 .price{
@@ -2037,11 +2099,93 @@ footer a{
     /* border: 1px solid red; */
 }
 
+.p1-text{
+    margin: auto;
+    width: 58.3333%;
+    /* border: 1px solid red; */
+}
 
+.p1-text p{
+    /* margin: 10px 0 50px 10px; */
+    /* background-color: #5b5b5b; */
+    width: 99%;
+    margin: 8px auto 24px auto;
+    font-size: 14px;
+    /* border: 2px solid yellow; */
+}
 
+.breadcrumb{
+    /* border: 1px solid green; */
+}
 
+.breadcrumb ol{
+    display: flex;
+    width: 60%;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 60px;
+    /* border: 1px solid red; */
+}
 
+.breadcrumb ol li{
+    /* text-decoration: none; */
+    margin: 4px 0px;
+}
 
+.breadcrumb li + li:before{
+    content: '/';
+    margin: 0 6px;
+}
+
+.breadcrumb a{
+    font-size: 12px;
+    color: #6C6C6C;
+}
+.breadcrumb li:last-child{
+    font-weight: bold;
+}
+
+@media (width<=768px) {
+    .product1{
+        width: 90%;
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+    .product1-pic{
+        width: 100%;
+        /* border: 1px solid orange; */
+    }
+    .section-product1{
+        width: 80%;
+        margin: auto;
+        height: 250px;
+        /* border: 1px solid green; */
+    }
+    .large-pic{
+        margin: auto;
+        width: 80%;
+        /* border: 1px solid blue; */
+    }
+    .small-pics{
+        margin: auto;
+        width: 80%;
+        /* border: 1px solid red; */
+    }
+    .p1-text{
+        width: 78%;
+        /* margin-right: 10px; */
+        /* margin: auto; */
+        /* margin: auto 0; */
+        /* border: 1px solid red; */
+    }
+    .counter{
+        margin-bottom: 40px;
+    }
+    .breadcrumb ol{
+        margin-left: 20px;
+    }
+
+}
 
 
 /* =================工具================ */
