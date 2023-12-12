@@ -19,3 +19,4 @@ for(let i=0; i<btnMinus.length; i++){
 }
 }
 window.addEventListener("load", init, false);
+
