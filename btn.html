@@ -56,7 +56,7 @@
             display: block;
         } */
 
-        #bb{
+        /* #bb{
             width: 30px;
             height: 30px;
             margin: 10px;
@@ -66,13 +66,79 @@
         #cc{
             width: 30px;
             height: 30px;
-            background-color: lightgreen
+            background-color: lightgreen 
+        }*/
+
+        .index-mb-header{
+            /* position: relative; */
+            width: 100%;
+            height: 100px;
+            position: sticky;
+            top: 0;
+            background-color: red;
+        }
+        .aa{
+            width: 100%;
+            height: 700px;
+            background-color: #ccc;
+        }
+        .bb{
+            width: 100%;
+            height: 700px;
+            background-color: aqua;
+        }
+        .cc{
+            width: 100%;
+            height: 700px;
+            background-color: orange;
+        }
+        .dd{
+            width: 100%;
+            height: 700px;
+            background-color: gray;
+        }
+        .ee{
+            width: 100%;
+            height: 700px;
+            background-color: lightsalmon;
+        }
+        .gg{
+            width: 100%;
+            height: 700px;
+            background-color: aqua;
         }
 
 
 
     </style>
-    
+    <script src="./js/jquery-3.7.1.js"></script>
+	<script>
+		$(function () {
+			let showHeight = 200
+
+			$('.area').css({
+				display: 'block',
+				opacity: 0,
+			})
+
+			$(window).scroll(function(){
+				$('.area').each(function(){
+					let areaTop = $(this).offset().top  //物件和螢幕的距離
+					// console.log(areaTop);
+
+					if($(window).scrollTop() >= (areaTop + showHeight) - $(window).height()){
+						$(this).stop().animate({
+							opacity: 1,
+						}, 800)
+					}else{
+						$(this).stop().animate({
+							opacity:0,
+						}, 500)
+					}
+				})
+			})
+		})	
+	</script>
 </head>
 <body>
     <!-- <a href="javascript: void(0)" class="btn">
@@ -162,14 +228,54 @@
 
 
 
-
+<!-- 
 <input type="checkbox" id="aa">
 
 <label for="aa" id="bb">bb</label>
 
-<label for="aa" id="cc">cc</label>
+<label for="aa" id="cc">cc</label> -->
 
+<div class="aa"></div>
+<div class="index-mb-header"><p>1</p></div>
+<div class="bb"></div>
+<div class="cc"></div>
+<div class="dd"></div>
+<div class="ee"></div>
+<div class="gg"></div>
+<div class="aa"></div>
+<div class="aa"></div>
+<div class="aa"></div>
+<div class="aa"></div>
 
+<!-- 
+<div class="header">
+
+    <div class="index-title" id="index-title">
+        <nav>
+            <ul>
+                <li>
+                    <a href="./products.html">所有商品</a>
+                    <ul class="dropdown">
+                        <li><a href="./products.html">飾品</a></li>
+                        <li><a href="./tools.html">工具</a></li>
+                    </ul>
+                </li>
+                <li><a href="./reservation.html">預約課程</a></li>
+                <li><a href="./news.html">最新消息</a></li>
+                <li><a href="./about.html">關於我們</a></li>
+                <li><a href="./cart.html">購物車</a></li>
+                <li><a href="./signin.html">登入</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass search-logo"></i>
+            <input type="search" name="search" class="search-bar" placeholder=" ">
+        </div>
+    </nav>
+    
+    </div>
+
+</div> -->
 
     <!-- <script src="./js/javascript.js"></script> -->
 
