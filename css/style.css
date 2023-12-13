@@ -873,7 +873,13 @@ footer a{
     width: 100%;
     margin: auto;
     width: 75%;
-    /* border: 1px solid orange; */
+}
+
+@media (width > 768px) {
+    .intro{
+        margin-top: 100px;
+        /* border: 1px solid orange; */
+    }
 }
 
 .intro .text{
