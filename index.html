@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Kaisei+Decol:wght@400;500;700&family=Noto+Sans+TC:wght@300;400&family=Noto+Serif+TC:wght@400;500&display=swap" rel="stylesheet">
+    <!-- ------jQuery------ -->
+    <script src="./js/jquery-3.7.1.js"></script>
 
 
     <!-- font-family: 'Julius Sans One', sans-serif;
@@ -27,7 +29,7 @@
 <body>
     <!-- <div class="container"> -->
 
-        <header>
+        <header class="index-mb-header">
             <div class="header-logo"><a href="./index.html">
                 <img src="./img/logo/header-logo.png" alt="header_logo">
             </a></div>
@@ -54,11 +56,11 @@
                 </div>
             </nav>
 
-            <input type="checkbox" id="hamburger">
-                    <label class="hamburger" id="hamburger" for="hamburger">
-                            <span class="ham-bar"></span>
-                            <span class="ham-bar"></span>
-                            <span class="ham-bar"></span>
+            <input type="checkbox" id="ham">
+                    <label class="hamburger" id="hamburger" for="ham">
+                        <span class="ham-bar" id="hamBar1"></span>
+                        <span class="ham-bar" id="hamBar2"></span>
+                        <span class="ham-bar" id="hamBar3"></span>
                     </label>
 
             <nav class="ham-menu">
@@ -88,6 +90,9 @@
         
             </div>
         </header>
+
+        <label id="overlay" for="ham"></label>
+
 
         <!-- <header class="index-mb-header">
             <div class="header-logo "><a href="./index.html">
@@ -152,7 +157,7 @@
             </nav>
             
             </div>
-            <div class="banner col-12">
+            <div class="banner">
                 <div class="logo">
                     <img src="img/logo/v2-white-logo-large.png" alt="curious studio">
                 </div>
@@ -289,6 +294,6 @@
             </div>
         </footer>
     <!-- </div> -->
-
+        <script src="./js/jQuery.js"></script>
 </body>
 </html>

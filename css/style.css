@@ -232,6 +232,7 @@ header{
     position: relative;
     position: sticky;
     top: 0;
+    z-index: 999;
     /* border: 1px solid red; */
 }
 
@@ -388,14 +389,18 @@ nav ul li:hover ul.dropdown{
 }
 
 /* -------- hamburger ---------- */
+.no-scroll {
+    overflow: hidden;
+}
+
 
 .hamburger{
     width: 30px;
     height: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     display: none;
+    justify-content: space-between;
     margin: auto 15px;
     /* background-color: aqua; */
     /* border: 1px solid orange; */
@@ -417,12 +422,12 @@ nav ul li:hover ul.dropdown{
     /* border: 1px solid red; */
 }
 
-input#hamburger{
+input#ham{
     display: none;
 }
 
 
-#hamburger[type="checkbox"]:checked ~ .ham-menu{
+#ham[type="checkbox"]:checked ~ .ham-menu{
     max-height: 100vh;
     display: block;
 }
@@ -436,12 +441,15 @@ input#hamburger{
 }
 
 .ham-menu li{
-    border-bottom: 1px solid #6C6C6C;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
+.ham-menu li + li{
+    border-top: 1px solid #6C6C6C;
+
+}
 
 .ham-menu li a{
     box-sizing: border-box;
@@ -490,10 +498,13 @@ input#hamburger{
 }
 
 
+
+
 @media (width<=768px) {
     #hamburger{
         display: flex;
         cursor: pointer;
+        /* z-index: 999; */
     }
     .ham-menu{
         width: 80%;
@@ -512,13 +523,13 @@ input#hamburger{
     .ham-menu ul li a{
         padding: 15px 0 15px 20px;
         display: block;
-        /* color: #1F237D; */
         font-size: 20px;
         font-family: 'Kaisei Decol';
         width: 100%;
         color: #FFF;
     }
 }
+
 
 /* -----子選單------- */
 
@@ -557,6 +568,16 @@ input#hamburger{
 }
 /* -----子選單------- */
 
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* 背景遮罩的顏色和透明度 */
+    z-index: 998; /* 確保遮罩在最上層 */
+}
 /* -------- hamburger ---------- */
 
 
@@ -778,11 +799,13 @@ footer a{
 /* --------- header ----------- */
 
 .header{
-    background: url('../img/banner/header-banner.png'); 
-    background-size: contain;
+    background: url('../img/banner/header-banner.png') no-repeat; 
+    background-size: cover;
+    /* max-width: 100%; */
+    /* height: auto; */
     width: 100%;
     height: 700px;
-    background-repeat-Y: no-repeat;
+    /* background-repeat-Y: no-repeat; */
     /* background-color: aqua; */
 }
 
@@ -797,11 +820,8 @@ footer a{
     width: 41.66666%;
 }
 
-.intro .pic img{
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
+.banner{
+    width: 100%;
 }
 
 
@@ -826,7 +846,9 @@ footer a{
     .mb-banner{
         display: none;
     }
-    
+    .index-mb-header{
+        display: none;
+    }
 }
 
 @media (width<=768px) {

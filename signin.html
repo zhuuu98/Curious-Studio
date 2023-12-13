@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Kaisei+Decol:wght@400;500;700&family=Noto+Sans+TC:wght@300;400&family=Noto+Serif+TC:wght@400;500&display=swap" rel="stylesheet">
+    <!-- ------jQuery------ -->
+    <script src="./js/jquery-3.7.1.js"></script>
 
     <!-- font-family: 'Julius Sans One', sans-serif;
     font-family: 'Kaisei Decol', serif;
@@ -51,11 +53,11 @@
                 </div>
             </nav>
 
-            <input type="checkbox" id="hamburger">
-                    <label class="hamburger" id="hamburger" for="hamburger">
-                            <span class="ham-bar"></span>
-                            <span class="ham-bar"></span>
-                            <span class="ham-bar"></span>
+            <input type="checkbox" id="ham">
+                    <label class="hamburger" id="hamburger" for="ham">
+                        <span class="ham-bar" id="hamBar1"></span>
+                        <span class="ham-bar" id="hamBar2"></span>
+                        <span class="ham-bar" id="hamBar3"></span>
                     </label>
 
         <nav class="ham-menu">
@@ -82,12 +84,12 @@
                         <li><a href="./signin.html">登入</a></li>
                     </ul>
         </nav>
+        
+        
+    </div>
+</header>
 
-
-
-            </div>
-        </header>
-
+<label id="overlay" for="ham"></label>
 
         <div class="section-signin" col-9>
             <h1>會員登入</h1>
@@ -134,7 +136,7 @@
             </div>
         </footer>
 
-        <script src="./js/javascript.js"></script>
-    <!-- </div> -->
+        <!-- </div> -->
+        <script src="./js/jQuery.js "></script>
 </body>
 </html>
