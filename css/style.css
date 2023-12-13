@@ -2039,7 +2039,7 @@ footer a{
     height: 6px;
     margin: auto 16px;
     background-color: #6C6C6C;
-    border-radius: 50%;
+    border-radius: 50px;
 }
 
 .date{
@@ -2052,7 +2052,7 @@ footer a{
 }
 
 .news a p{
-    font-size: 14px;
+    font-size: 16px;
     color: #1F237D;
     border-bottom: 1px solid #6C6C6C;
     width: 80%;
