@@ -132,6 +132,21 @@ $(".small").on("click", function() {
     $(".large").attr("src", $(this).attr("src"));
 });
 
+//NAV搜尋放大鏡消失
+$('.search').click(function() {
+    // Check if elements with the class "search-logo" are currently visible
+    if ($('.search-logo').is(':visible')) {
+        // If visible, hide them
+        $('.search-logo').hide();
+    } else {
+        // If not visible, show them
+        $('.search-logo').show();
+    }
+});
+
+
+
+
 
 
 
