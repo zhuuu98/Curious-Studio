@@ -353,12 +353,12 @@ nav ul li:hover ul.dropdown{
 }
 
 .small-banner-leg{
-    width: 40px;
+    width: 50px;
     height: 30px;
     border-left: 10px solid #1F237D;
     border-right: 10px solid #1F237D;
     background-color: #00000000;
-    margin-left: 140px;
+    margin-left: 144px;
     /* background-color: orange; */
     /* border: 1px solid red; */
 } 
@@ -977,64 +977,70 @@ footer a{
 /* --------- course ---------  */
 .course{
     background-color: #F5E5CC;
-    height: 500px;
+    height: 720px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    /* border: 1px solid red; */
-}
-
-.course-pic{
-    display: flex;
-    width: 66.66666%;
-    margin-left: -50px;
-    align-items: center;
+    overflow: hidden;
     /* border: 1px solid blue; */
 }
 
-.course-pic img{
-    /* width: 20%; */
+/* .course-pic{
+    display: flex;
+    width: 90%;
+    margin-top: 30px;
+    margin-left: -50px;
+    align-items: center;
+    border: 1px solid blue;
+} */
+
+/* .course-pic img{
+    width: 20%;
     height: 300px;
+    margin: auto;
     margin: 20px 5px 20px 5px;
-    /* border: 1px solid orange; */
-}
+    border: 1px solid orange;
+} */
 
 .course .section{
     height: 300px;
-    width: 33.3333%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
-    /* border: 1px solid red; */
+    /* border: 1px solid green; */
 }
 
 .course h1{
     padding: 0;
+    margin: auto;
     /* border: 1px solid orange; */
-
 }
 
 .course p{
+    margin: auto;
+    text-align: center;
     width: 100%;
     /* border: 1px solid blue; */
 }
 
 .course .course-btn{
-    margin: auto;
+    margin: 10px auto;
     /* border: 1px solid red; */
 }
 
 
 @media (width<=768px) {
     .course{
-        height: 540px;
+        height: 520px;
         display: block;
         overflow: hidden;
         /* border: 1px solid green; */
     }
-    .course-pic{
+    /* .course-pic{
         width: 100%;
-    /* border: 1px solid red; */
-    }
+    border: 1px solid red;
+    } */
     .course .section{
         width: 90%;
         height: 140px;
@@ -1047,6 +1053,111 @@ footer a{
     /* border: 1px solid red; */
     }
 }
+
+
+
+/* 照片輪播 */
+.image{
+	max-width: 100%;
+    height: auto;
+    /* margin-left: 49px; */
+    /* display: none; */
+	/* border: 1px solid red; */
+}
+
+.slider{
+	width: 100%;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+	/* border: 1px solid purple; */
+}
+
+#sliderBoard{  /*div*/
+	width: 54%;
+    height: 80%;
+	margin: 50px auto 0px auto;
+	overflow: hidden;
+	/* border: 1px solid green; */
+    /* background-color: green; */
+}
+
+#content{  /*ul*/
+	position: relative;
+    /* border: 1px solid blue; */
+}
+
+#content li{  /*li*/
+	float: left;
+    /* border: 1px solid blue; */
+}
+
+/* circle button */
+#contentButton{
+	text-align: center;
+	width: 100%;
+	height: 90px;
+    /* margin-top: 50px; */
+    /* bottom: -30px; */
+	/* background-color: red; */
+	/* border: 1px solid blue; */
+}
+#contentButton li{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #aaa;
+	display: inline-block;
+	margin: 8px;
+	cursor: pointer;
+}
+
+#contentButton li.clicked{
+	background-color: #6C6C6C;
+}
+
+@media (width<1080px) {
+    .slider{
+        width: 600px;
+        height: 60%;
+        /* border: 1px solid red; */
+    }
+
+	#sliderBoard {
+        width: 100%; /* 調整為手機寬度 */
+        height: 300px;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+
+    #contentButton {
+        /* margin-top: 250px; */
+        height: 50px; /* 調整圓形按鈕高度 */
+    }
+
+    #content{
+        /* background-color: green; */
+        margin-top: 25px;
+        /* border:  1px solid green; */
+    }
+
+    #contentButton li {
+        width: 15px; /* 調整圓形按鈕大小 */
+        height: 15px;
+        margin: 5px;
+    }
+
+    .image{
+        width: 100%;
+        /* height: 100%; */
+        margin: auto;
+        /* border: 1px solid red; */
+        /* overflow: hidden; */
+        /* display: none; */
+    }
+}
+
+
+/* 照片輪播 */
 
 
 
@@ -1942,6 +2053,7 @@ footer a{
     font-size: 14px;
     line-height: 18px;
     margin: 10px 0px;
+    color: #6C6C6C;
     /* border: 1px solid red; */
 }
 
