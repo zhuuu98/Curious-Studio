@@ -169,6 +169,8 @@ a{
 }
 /* ------按鈕------- */
 .btn {
+    width: 130px;
+    height: 40px;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -977,7 +979,7 @@ footer a{
 /* --------- course ---------  */
 .course{
     background-color: #F5E5CC;
-    height: 720px;
+    height: 740px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1166,6 +1168,19 @@ footer a{
     width: 100%;
 }
 
+.products-pic{
+    position: relative;
+    /* border: 1px solid blue; */
+}
+
+.index-products-h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid red; */
+}
+
 .products-list{
     width: 83.3333%;
     display: flex;
@@ -1183,6 +1198,7 @@ footer a{
 .product-pic{
     border-radius: 50%;
     overflow: hidden;
+    /* border: 1px solid blue; */
 }
 
 .product-pic img{
@@ -1346,7 +1362,6 @@ footer a{
 }
 
 .section-signin .btn{
-    width: 100px;
     margin: 50px auto 5px auto;
 }
 
@@ -1404,6 +1419,7 @@ footer a{
     display: flex;
     width: 249px;
     margin-left: 100px;
+    cursor: pointer;
 }
 
 .small-pics img{
@@ -1612,12 +1628,12 @@ footer a{
 }
 
 .pay-btn{
-    width: 100px;
-    height: 25px;
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
     text-align: center;
     margin: 20px 0 30px auto;
     border: 1px solid #1F237D;
-    border-radius: 15px;
     color: #1F237D;
     display: flex;
     justify-content: center;
@@ -1625,13 +1641,7 @@ footer a{
 }
 
 .pay-btn:hover{
-    width: 100px;
-    height: 25px;
-    text-align: center;
-    margin: 20px 0 30px auto;
-    border: 1px solid #1F237D;
     background-color: #1F237D;
-    border-radius: 15px;
     color: #FFF;
 }
 

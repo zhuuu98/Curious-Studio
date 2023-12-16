@@ -69,8 +69,7 @@
             background-color: lightgreen 
         }*/
 
-        .index-mb-header{
-            /* position: relative; */
+        /* .index-mb-header{
             width: 100%;
             height: 100px;
             position: sticky;
@@ -106,38 +105,42 @@
             width: 100%;
             height: 700px;
             background-color: aqua;
-        }
+        } */
 
+        .small{
+            width: 97px;
+            height: 97px;
+        }
 
 
     </style>
     <script src="./js/jquery-3.7.1.js"></script>
 	<script>
-		$(function () {
-			let showHeight = 200
+		// $(function () {
+		// 	let showHeight = 200
 
-			$('.area').css({
-				display: 'block',
-				opacity: 0,
-			})
+		// 	$('.area').css({
+		// 		display: 'block',
+		// 		opacity: 0,
+		// 	})
 
-			$(window).scroll(function(){
-				$('.area').each(function(){
-					let areaTop = $(this).offset().top  //物件和螢幕的距離
-					// console.log(areaTop);
+		// 	$(window).scroll(function(){
+		// 		$('.area').each(function(){
+		// 			let areaTop = $(this).offset().top  //物件和螢幕的距離
+		// 			// console.log(areaTop);
 
-					if($(window).scrollTop() >= (areaTop + showHeight) - $(window).height()){
-						$(this).stop().animate({
-							opacity: 1,
-						}, 800)
-					}else{
-						$(this).stop().animate({
-							opacity:0,
-						}, 500)
-					}
-				})
-			})
-		})	
+		// 			if($(window).scrollTop() >= (areaTop + showHeight) - $(window).height()){
+		// 				$(this).stop().animate({
+		// 					opacity: 1,
+		// 				}, 800)
+		// 			}else{
+		// 				$(this).stop().animate({
+		// 					opacity:0,
+		// 				}, 500)
+		// 			}
+		// 		})
+		// 	})
+		// })	
 	</script>
 </head>
 <body>
@@ -235,7 +238,7 @@
 
 <label for="aa" id="cc">cc</label> -->
 
-<div class="aa"></div>
+<!-- <div class="aa"></div>
 <div class="index-mb-header"><p>1</p></div>
 <div class="bb"></div>
 <div class="cc"></div>
@@ -245,7 +248,7 @@
 <div class="aa"></div>
 <div class="aa"></div>
 <div class="aa"></div>
-<div class="aa"></div>
+<div class="aa"></div> -->
 
 <!-- 
 <div class="header">
@@ -277,7 +280,30 @@
 
 </div> -->
 
-    <!-- <script src="./js/javascript.js"></script> -->
+<div class="reservation-pic" >
+    <div class="large-pic">
+        <img src="./img/reservation/ring1.jpg" alt="large-pic" class="large" width="300px" height="300px">
+    </div>
+    <div class="small-pics">
+        <img src="./img/reservation/ring1.jpg" alt="ring1" class="small">
+        <img src="./img/reservation/ring2.jpg" alt="ring2" class="small">
+        <img src="./img/reservation/ring3.jpg" alt="ring3" class="small">
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+            // 使用 on 函數簡化事件處理
+            $(".small").on("click", function() {
+                // 將大圖片的 src 設置為被點擊的小圖片的 src
+                $(".large").attr("src", $(this).attr("src"));
+            });
+        });
+</script>
+
+
+
+    <script src="./js/javascript.js"></script>
 
 
     

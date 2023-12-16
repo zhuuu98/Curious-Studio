@@ -125,6 +125,13 @@ $(function () {
 });
 
 
+// 小圖換大圖
+// 使用 on 函數簡化事件處理
+$(".small").on("click", function() {
+    // 將大圖片的 src 設置為被點擊的小圖片的 src
+    $(".large").attr("src", $(this).attr("src"));
+});
+
 
 
 
