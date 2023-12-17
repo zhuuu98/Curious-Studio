@@ -43,6 +43,11 @@ $('#ham').click(function(){
     }
 });
 
+$('.fa-sort-down').click(function() {
+    $(this).toggleClass('rotate180');
+});
+
+
 
 // ---首頁小header---
 

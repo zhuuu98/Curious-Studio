@@ -548,6 +548,12 @@ input#ham{
     display: none;
 }
 
+.rotate180 {
+    transform: rotate(180deg);
+    margin-top: 12px;
+}
+
+
 
 @media (width<=768px) {
     .ham-menu .ham-menu-nav .ham-dropdown{
@@ -1119,7 +1125,7 @@ footer a{
 
 @media (width<1080px) {
     .slider{
-        width: 600px;
+        width: 00px;
         height: 60%;
         /* border: 1px solid red; */
     }
@@ -1127,7 +1133,8 @@ footer a{
 	#sliderBoard {
         width: 100%; /* 調整為手機寬度 */
         height: 300px;
-        margin: auto;
+        margin-top: -30px;
+        /* margin: 0px auto 0px auto; */
         /* border: 1px solid red; */
     }
 
@@ -1143,9 +1150,9 @@ footer a{
     }
 
     #contentButton li {
-        width: 15px; /* 調整圓形按鈕大小 */
-        height: 15px;
-        margin: 5px;
+        width: 10px; /* 調整圓形按鈕大小 */
+        height: 10px;
+        margin: 8px;
     }
 
     .image{
