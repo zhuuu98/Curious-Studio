@@ -130,7 +130,15 @@ $(function () {
 $(".small").on("click", function() {
     // 將大圖片的 src 設置為被點擊的小圖片的 src
     $(".large").attr("src", $(this).attr("src"));
+    
+    // 為被點擊的小圖片添加黑色邊框
+    $(this).css('border', '2px solid #6c6c6c');
+
+    // 移除其他小圖片的邊框
+    $(".small").not(this).css('border', 'none');
 });
+
+
 
 //NAV搜尋放大鏡消失
 $('.search').click(function() {
@@ -143,6 +151,40 @@ $('.search').click(function() {
         $('.search-logo').show();
     }
 });
+
+
+//篩選filter
+
+//全部商品
+$('.filter-all').click(function(){
+    $('.card').show();
+})
+
+//項鍊
+$('.filter-necklace').click(function(){
+    $('.card').show();
+    $('.card:not(.necklace)').hide();
+});
+
+//手鍊
+$('.filter-bracelet').click(function(){
+    $('.card').show();
+    $('.card:not(.bracelet)').hide();
+});
+
+//戒指
+$('.filter-ring').click(function(){
+    $('.card').show();
+    $('.card:not(.ring)').hide();
+});
+
+//耳環
+$('.filter-earring').click(function(){
+    $('.card').show();
+    $('.card:not(.earring)').hide();
+});
+
+
 
 
 

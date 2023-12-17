@@ -1929,6 +1929,62 @@ footer a{
 }
 
 
+/* -- 篩選器filter -- */
+.filter{
+    position: fixed;
+    top: 190px;
+    width: 100px;
+    height: 200px;
+    background-color: #1F237D;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 3px 5px 10px #6c6c6c;
+}
+
+.filter-all, .filter-necklace, .filter-bracelet, .filter-ring, .filter-earring{
+    margin: 2px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+
+     /* 清除按钮默认样式 */
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    /* 避免按钮在一些浏览器中出现奇怪的内边距 */
+    outline: none;
+
+    /* 清除按钮在某些浏览器上的点击效果 */
+    cursor: pointer;
+
+    /* 去除按钮的背景色，可以根据需要调整 */
+    background: transparent;
+
+    /* 去除按钮的文本修饰 */
+    text-decoration: none;
+}
+
+.filter-all:hover, .filter-necklace:hover, .filter-bracelet:hover, .filter-ring:hover, .filter-earring:hover{
+    color: #ccc;
+}
+
+@media (width<=768px) {
+    .filter{
+        display: none;
+    }
+}
+
+
+
 
 
 
