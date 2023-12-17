@@ -81,7 +81,8 @@ $(function () {
 
 
 
-//首頁slider
+
+//----首頁slider----
 
 $(function () {
     let divWidth = $('#sliderBoard').width() //div的寬度 = li的寬度
@@ -130,7 +131,7 @@ $(function () {
 });
 
 
-// 小圖換大圖
+// ----小圖換大圖----
 // 使用 on 函數簡化事件處理
 $(".small").on("click", function() {
     // 將大圖片的 src 設置為被點擊的小圖片的 src
@@ -145,7 +146,7 @@ $(".small").on("click", function() {
 
 
 
-//NAV搜尋放大鏡消失
+//----NAV搜尋放大鏡消失-----
 $('.search').click(function() {
     // Check if elements with the class "search-logo" are currently visible
     if ($('.search-logo').is(':visible')) {
@@ -158,7 +159,7 @@ $('.search').click(function() {
 });
 
 
-//篩選filter
+//----篩選filter----
 
 //全部商品
 $('.filter-all').click(function(){
@@ -189,6 +190,19 @@ $('.filter-earring').click(function(){
     $('.card:not(.earring)').hide();
 });
 
+
+//-----預約預設今天日期-----
+ // 獲取今天的日期
+    var today = new Date();
+            
+ // 將日期格式化為 "YYYY-MM-DD"，適用於 input type="date"
+    var formattedDate = today.toISOString().split('T')[0];
+
+ // 將預設值設置為今天的日期
+    $('#today').val(formattedDate);
+    
+ // 將最小值設置為今天的日期
+$('#today').prop('min', formattedDate);
 
 
 

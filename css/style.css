@@ -548,10 +548,7 @@ input#ham{
     display: none;
 }
 
-.rotate180 {
-    transform: rotate(180deg);
-    margin-top: 12px;
-}
+
 
 
 
@@ -570,6 +567,10 @@ input#ham{
     .ham-dropdown{
         display: flex;
         /* flex-wrap: wrap; */
+    }
+    .rotate180 {
+        transform: rotate(180deg);
+        margin-top: 12px;
     }
 }
 /* -----子選單------- */
