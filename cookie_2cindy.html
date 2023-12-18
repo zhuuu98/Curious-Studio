@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <link rel="stylesheet" href="./sass/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="out">
+        <div>
+            <div class="pd" data-id="01" data-pname="珍珠淡水戒指" data-price="1200">
+                <img src="" alt="">
+                <h1>珍珠淡水戒指</h1>
+                <p>$1200</p>
+                <span>1</span>
+            </div>
+        </div>
+        <button>加入購物車</button>
+    </div>
+
+    
+
+    
+    <div class="addtocart">
+        <h4>購物車頁</h4>
+        <ul>
+            <li>
+                <img src="" alt="">
+                <h1></h1>
+                <p></p>
+                <span></span>
+            </li>
+        </ul>
+        <div class="btn">跳出cookie資料</div>
+    </div>
+
+    <script>
+        function setCookie(cookieName, cookieValue, expirationDays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (expirationDays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cookieName) {
+            var name = cookieName + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var cookieArray = decodedCookie.split(';');
+
+            for (var i = 0; i < cookieArray.length; i++) {
+                var cookie = cookieArray[i];
+                while (cookie.charAt(0) === ' ') {
+                    cookie = cookie.substring(1);
+                }
+                if (cookie.indexOf(name) === 0) {
+                    return cookie.substring(name.length, cookie.length);
+                }
+            }
+            return null;
+        }
+
+        
+        $('.out button').click(function(){
+            // 如果設data
+            var id = $('.pd').attr('data-id');
+            var pname = $('.pd').attr('data-pname');
+            var price = $('.pd').attr('data-price');
+            var qty = $('.pd span').text();
+    
+            // 如果不設data 抓text()
+            // var pname = $('.pd h1').text();
+            // var price = $('.pd p').text();
+            // var qty = $('.pd span').text();
+
+            // setCookie('pname', pname , 1);
+            // setCookie('price', price , 1);
+            // setCookie('qty', qty, 1);
+            
+            //加id之後 
+            setCookie(id +'pname', pname , 1);
+            setCookie(id +'price', price , 1);
+            setCookie(id + 'qty', qty, 1);
+        })
+
+        $('.btn').click(function(){
+            // var pname = getCookie('pname');
+            // var price = getCookie('price');
+            // var qty = getCookie('qty');
+            
+            // 加id之後
+            var id = $('.pd').attr('data-id');
+            var pname = getCookie(id + 'pname');
+            var price = getCookie(id +'price');
+            var qty = getCookie(id +'qty');
+
+            $('.addtocart li h1').text(pname);
+            $('.addtocart li p').text(price);
+            $('.addtocart li span').text(qty);
+        })
+
+
+    </script>
+
+</body>
+</html>
