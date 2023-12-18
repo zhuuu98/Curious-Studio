@@ -1,5 +1,4 @@
 
-
 // ---漢堡---
 
 $('#ham').click(function(){
@@ -133,6 +132,8 @@ $(function () {
 
 // ----小圖換大圖----
 // 使用 on 函數簡化事件處理
+$(".small:first").css('border', '2px solid #6c6c6c');
+
 $(".small").on("click", function() {
     // 將大圖片的 src 設置為被點擊的小圖片的 src
     $(".large").attr("src", $(this).attr("src"));
@@ -200,9 +201,28 @@ $('.filter-earring').click(function(){
 
  // 將預設值設置為今天的日期
     $('#today').val(formattedDate);
-    
+
  // 將最小值設置為今天的日期
 $('#today').prop('min', formattedDate);
+
+
+
+
+//---登入提醒---
+$('.signin-btn').click(function(){
+    alert('已成功登入！');
+});
+
+
+//---預約課程加入購物車----
+$('.re-add-to-cart').click(function(){
+    alert("成功加入購物車！");
+})
+
+
+
+
+
 
 
 

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車 Cookie 範例</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        // 設置 Cookie 函數
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + value + expires + "; path=/";
+        }
+
+        // 獲取 Cookie 函數
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i];
+                while (cookie.charAt(0) === ' ') {
+                    cookie = cookie.substring(1, cookie.length);
+                }
+                if (cookie.indexOf(nameEQ) === 0) {
+                    return cookie.substring(nameEQ.length, cookie.length);
+                }
+            }
+            return null;
+        }
+
+        $(document).ready(function () {
+            // 模擬將商品添加到購物車
+            $(".add-to-cart").click(function () {
+                var productDiv = $(this).closest('.product1');
+                var productId = productDiv.data('product-id');
+                var productName = productDiv.data('product-name');
+                var productPrice = productDiv.data('product-price');
+                var quantity = $(".countnum").val();
+
+                // 檢查是否輸入了商品編號和數量
+                if (productId && quantity) {
+                    // 獲取現有的購物車內容
+                    var cartItems = JSON.parse(getCookie("cart")) || {};
+
+                    // 檢查該商品是否已經存在於購物車中
+                    if (cartItems[productId]) {
+                        // 更新數量
+                        cartItems[productId].quantity += parseInt(quantity);
+                    } else {
+                        // 添加新的商品
+                        cartItems[productId] = {
+                            productName: productName,
+                            productPrice: productPrice,
+                            quantity: parseInt(quantity)
+                        };
+                    }
+
+                    // 轉換為 JSON 字符串並將其存儲在 Cookie 中
+                    setCookie("cart", JSON.stringify(cartItems), 0); // 使用 Session Cookie
+
+                    alert("商品已添加到購物車！");
+                } else {
+                    alert("請輸入商品編號和數量。");
+                }
+            });
+
+            // 檢查購物車中是否有商品
+            $(".check-cart").click(function () {
+                var cartItems = JSON.parse(getCookie("cart"));
+
+                if (cartItems) {
+                    alert("購物車中的商品：" + JSON.stringify(cartItems));
+                } else {
+                    alert("購物車中沒有商品。");
+                }
+            });
+        });
+
+        console.log(getCookie("cart"));
+
+
+    </script>
+</head>
+<body>
+    <div class="product1" data-product-id="p1" data-product-name="淡水珍珠戒指" data-product-price="1000">
+        <div class="product1-pic" >
+            <div class="large-pic">
+                <img src="./img/products/p1.jpg" alt="淡水珍珠戒指" class="large" width="300px">
+            </div>
+            <div class="small-pics">
+                <img src="./img/products/p1.jpg" alt="淡水珍珠戒指" class="small" width="100px">
+                <img src="./img/products/p1-2.jpg" alt="淡水珍珠戒指" class="small" width="100px">
+            </div>
+        </div>
+
+        <div class="section-product1">
+            <h2>淡水珍珠戒指</h2>
+            <div class="price">NT$1,000</div>
+            <div class="chose-text">人數</div>
+
+            <div class="counter">
+                <input type="button" value="-" class="minus"/>
+                <input type="text" value="0" class="countnum"></input>
+                <input type="button" value="+" class="plus"/>
+            </div>
+
+            <a href="javascript:void(0);" class="btn add-to-cart">
+                加入購物車
+                <span></span><span></span><span></span><span></span>
+            </a>
+        </div>
+    </div>
+    <script src="./js/javascript.js"></script>
+</body>
+</html>
