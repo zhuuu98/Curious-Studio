@@ -29,13 +29,13 @@ $('.add-to-cart').click(function(){
     alert("成功加入購物車！");
     // 如果設data
     // var id = $('.product1').attr('data-id');
-    var pname = $('.product1').attr('data-pname');
+    // var pname = $('.product1').attr('data-pname');
     var price = $('.product1').attr('data-price');
     var qty = $('.countnum').val();
 
     
     //加id之後 
-    setCookie('pname', pname , 1);
+    // setCookie('pname', pname , 1);
     setCookie('price', price , 1);
     setCookie('qty', qty, 1);
 })
@@ -44,11 +44,12 @@ $('.add-to-cart').click(function(){
 $(document).ready(function(){
     function getCookie2(){
         // var id = $('.product1').attr('data-id');
-        var pname = getCookie('p1pname');
+        // var pname = getCookie('p1pname');
+        // var pname = getCookie('pname');
         var price = getCookie('price');
         var qty = getCookie('qty');
 
-        $('.product1Name h3').text(getCookie('pname'));
+        // $('.product1Name h3').text(getCookie('pname'));
         $('.product1Price').text('$' + price);
         $('.product1Qty').val(qty);
         console.log(getCookie('pname'))
